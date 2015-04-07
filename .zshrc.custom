@@ -23,35 +23,6 @@ setopt transient_rprompt
 
 ## Default shell configuration
 # colors enables us to idenfity color by $fg[red].
-autoload colors
-colors
-case ${UID} in
-0)
-    PROMPT="%B%{${fg[red]}%}%/#%{${reset_color}%}%b "
-    PROMPT2="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
-    SPROMPT="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
-    [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-        PROMPT="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') ${PROMPT}"
-    ;;
-*)
-    #
-    # Color
-    #
-    DEFAULT=$'%{\e[1;0m%}'
-    RESET="%{${reset_color}%}"
-    GREEN="%{${fg[green]}%}"
-    BLUE="%{${fg[blue]}%}"
-    RED="%{${fg[red]}%}"
-    CYAN="%{${fg[cyan]}%}"
-    WHITE="%{${fg[white]}%}"
-
-    #
-    # Prompt
-    #
-    PROMPT='%{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}'
-    RPROMPT='${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${RESET}'
-
-    #
     # Vi入力モードでPROMPTの色を変える
     # http://memo.officebrook.net/20090226.html
     function zle-line-init zle-keymap-select {
@@ -147,10 +118,6 @@ case ${UID} in
       echo "[$color$name$action$pushed%f%b]"
     }
 
-    RPROMPT='`rprompt-git-current-branch`${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)${WHITE}]${RESET}'
-
-    ;;
-esac
 
 # 指定したコマンド名がなく、ディレクトリ名と一致した場合 cd する
 setopt auto_cd
@@ -663,22 +630,6 @@ function __rm_single_file(){
        fi
 }
 
-## alias設定
-#
-[ -f ~/dotfiles/.zshrc.alias ] && source ~/dotfiles/.zshrc.alias
-
-case "${OSTYPE}" in
-# MacOSX
-darwin*)
-    # ここに設定
-    [ -f ~/dotfiles/.zshrc.osx ] && source ~/dotfiles/.zshrc.osx
-    ;;
-# Linux
-linux*)
-    # ここに設定
-    [ -f ~/dotfiles/.zshrc.linux ] && source ~/dotfiles/.zshrc.linux
-    ;;
-esac
 
 
 # ~/.zshrc
