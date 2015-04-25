@@ -1,0 +1,33 @@
+" YankRing.vim
+nmap ,y :YRShow<CR>
+
+" NERD_commenter.vim
+" コメントの前に1スペース
+let NERDSpaceDelims = 1
+" map <Leader>xでコメントをトグル
+nmap <Leader><Space> <plug>NERDCommenterToggle
+vmap <Leader><Space> <plug>NERDCommenterToggle
+" 未対応のファイルタイプでもエラーを出さない
+let NERDShutUp=1
+
+" Fugitive.vim
+nnoremap <Space>gd :<C-u>Gdiff<Enter>
+nnoremap <Space>gs :<C-u>Gstatus<Enter>
+nnoremap <Space>gc :<C-u>Gcommit<Enter>
+
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_start_level = 4
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+if 'dark' == &background
+    hi IndentGuidesOdd  ctermbg=black
+    hi IndentGuidesEven ctermbg=darkgrey
+else
+    hi IndentGuidesOdd  ctermbg=white
+    hi IndentGuidesEven ctermbg=lightgrey
+endif
+
+
