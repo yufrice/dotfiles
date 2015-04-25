@@ -38,7 +38,7 @@ NeoBundle 'YankRing.vim'
 NeoBundle 'taku-o/vim-toggle'
 
 "補完とスニペット
-NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/neocomplate'
 NeoBundle 'Shougo/neosnippets'
 
 "vim上で簡易実行
