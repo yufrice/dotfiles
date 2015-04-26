@@ -1,13 +1,13 @@
-" YankRing.vim
+ï»¿" YankRing.vim
 nmap ,y :YRShow<CR>
 
 " NERD_commenter.vim
-" ƒRƒƒ“ƒg‚Ì‘O‚É1ƒXƒy[ƒX
+" ã‚³ãƒ¡ãƒ³ãƒˆã®å‰ã«1ã‚¹ãƒšãƒ¼ã‚¹
 let NERDSpaceDelims = 1
-" map <Leader>x‚ÅƒRƒƒ“ƒg‚ğƒgƒOƒ‹
+" map <Leader>xã§ã‚³ãƒ¡ãƒ³ãƒˆã‚’ãƒˆã‚°ãƒ«
 nmap <Leader><Space> <plug>NERDCommenterToggle
 vmap <Leader><Space> <plug>NERDCommenterToggle
-" –¢‘Î‰‚Ìƒtƒ@ƒCƒ‹ƒ^ƒCƒv‚Å‚àƒGƒ‰[‚ğo‚³‚È‚¢
+" æœªå¯¾å¿œã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã§ã‚‚ã‚¨ãƒ©ãƒ¼ã‚’å‡ºã•ãªã„
 let NERDShutUp=1
 
 " Fugitive.vim

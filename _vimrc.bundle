@@ -19,32 +19,32 @@ filetype off
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" ƒfƒBƒŒƒNƒgƒŠƒcƒŠ[
-NeoBundle 'trinity.vim'
+" ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ„ãƒªãƒ¼
+NeoBundle 'wesleyche/Trinity'
 
-" ‚¢‚ë‚¢‚ë‚ÈƒhƒLƒ…ƒƒ“ƒg‚É‘Î‰‚³‚¹‚é
-NeoBundle 'vim-ref'
+" ã„ã‚ã„ã‚ãªãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«å¯¾å¿œã•ã›ã‚‹
+NeoBundle 'thinca/vim-ref'
 
-"ƒRƒƒ“ƒgƒAƒEƒg
+"ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
 NeoBundle 'scrooloose/nerdcommenter.git'
 
-"ƒCƒ“ƒfƒ“ƒgƒKƒCƒh
+"ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã‚¬ã‚¤ãƒ‰
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
-"ƒ„ƒ“ƒN—š—ğ ^C-p or ^C-n
-NeoBundle 'YankRing.vim'
+"ãƒ¤ãƒ³ã‚¯å±¥æ­´ ^C-p or ^C-n
+NeoBundle 'LeafCage/yankround.vim' 
 
-"bool“™Ø‚è‘Ö‚¦ ^C-a
+"boolç­‰åˆ‡ã‚Šæ›¿ãˆ ^C-a
 NeoBundle 'taku-o/vim-toggle'
 
-"•âŠ®‚ÆƒXƒjƒyƒbƒg
-NeoBundle 'Shougo/neocomplate'
-NeoBundle 'Shougo/neosnippets'
+"è£œå®Œã¨ã‚¹ãƒ‹ãƒšãƒƒãƒˆ
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippets.vim'
 
-"vimã‚ÅŠÈˆÕÀs
+"vimä¸Šã§ç°¡æ˜“å®Ÿè¡Œ
 NeoBundle 'thinca/vim-quickrun'
 
-"ƒGƒ‰[‚ğƒnƒCƒ‰ƒCƒg
+"ã‚¨ãƒ©ãƒ¼ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆ
 NeoBundle 'errormarker.vim'
 
 " vimshell
@@ -54,12 +54,20 @@ NeoBundle 'Shougo/vimshell.git'
 "vmap <Space>s :VimShellSendString<CR>
 
 " vimproc
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 
-" vim‚©‚çGit‘€ì‚·‚é
+" vimã‹ã‚‰Gitæ“ä½œã™ã‚‹
 NeoBundle 'tpope/vim-fugitive'
 
-" ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ğƒJƒbƒR‚æ‚­‚·‚é
+" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’ã‚«ãƒƒã‚³ã‚ˆãã™ã‚‹
 NeoBundle 'Lokaltog/vim-powerline'
 
 NeoBundle 'desert256.vim'

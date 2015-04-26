@@ -1,37 +1,37 @@
 "-------------------------------------------------------------------------------
-" Šî–{İ’è Basics
+" åŸºæœ¬è¨­å®š Basics
 "-------------------------------------------------------------------------------
-let mapleader = ","              " ƒL[ƒ}ƒbƒvƒŠ[ƒ_[
-set scrolloff=5                  " ƒXƒNƒ[ƒ‹‚Ì—]”’Šm•Û
-set textwidth=0                  " ˆês‚É’·‚¢•¶Í‚ğ‘‚¢‚Ä‚¢‚Ä‚à©“®Ü‚è•Ô‚µ‚ğ‚µ‚È‚¢
-set nobackup                     " ƒoƒbƒNƒAƒbƒvæ‚ç‚È‚¢
-set autoread                     " ‘¼‚Å‘‚«Š·‚¦‚ç‚ê‚½‚ç©“®‚Å“Ç‚İ’¼‚·
-set noswapfile                   " ƒXƒƒbƒvƒtƒ@ƒCƒ‹ì‚ç‚È‚¢
-set hidden                       " •ÒW’†‚Å‚à‘¼‚Ìƒtƒ@ƒCƒ‹‚ğŠJ‚¯‚é‚æ‚¤‚É‚·‚é
-set backspace=indent,eol,start   " ƒoƒbƒNƒXƒy[ƒX‚Å‚È‚ñ‚Å‚àÁ‚¹‚é‚æ‚¤‚É
-set formatoptions=lmoq           " ƒeƒLƒXƒg®Œ`ƒIƒvƒVƒ‡ƒ“Cƒ}ƒ‹ƒ`ƒoƒCƒgŒn‚ğ’Ç‰Á
-set vb t_vb=                     " ƒr[ƒv‚ğ‚È‚ç‚³‚È‚¢
-set browsedir=buffer             " Explore‚Ì‰ŠúƒfƒBƒŒƒNƒgƒŠ
-set whichwrap=b,s,h,l,<,>,[,]    " ƒJ[ƒ\ƒ‹‚ğs“ªAs––‚Å~‚Ü‚ç‚È‚¢‚æ‚¤‚É‚·‚é
-set showcmd                      " ƒRƒ}ƒ“ƒh‚ğƒXƒe[ƒ^ƒXs‚É•\¦
-set showmode                     " Œ»İ‚Ìƒ‚[ƒh‚ğ•\¦
-set viminfo='50,<1000,s100,\"50  " viminfoƒtƒ@ƒCƒ‹‚Ìİ’è
-set modelines=0                  " ƒ‚[ƒhƒ‰ƒCƒ“‚Í–³Œø
-set noundofile			 " undoƒtƒ@ƒCƒ‹‚Æ‚©
-set notitle                      " vim‚ğg‚Á‚Ä‚­‚ê‚Ä‚ ‚è‚ª‚Æ‚¤
+let mapleader = ","              " ã‚­ãƒ¼ãƒãƒƒãƒ—ãƒªãƒ¼ãƒ€ãƒ¼
+set scrolloff=5                  " ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«æ™‚ã®ä½™ç™½ç¢ºä¿
+set textwidth=0                  " ä¸€è¡Œã«é•·ã„æ–‡ç« ã‚’æ›¸ã„ã¦ã„ã¦ã‚‚è‡ªå‹•æŠ˜ã‚Šè¿”ã—ã‚’ã—ãªã„
+set nobackup                     " ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—å–ã‚‰ãªã„
+set autoread                     " ä»–ã§æ›¸ãæ›ãˆã‚‰ã‚ŒãŸã‚‰è‡ªå‹•ã§èª­ã¿ç›´ã™
+set noswapfile                   " ã‚¹ãƒ¯ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ä½œã‚‰ãªã„
+set hidden                       " ç·¨é›†ä¸­ã§ã‚‚ä»–ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã‘ã‚‹ã‚ˆã†ã«ã™ã‚‹
+set backspace=indent,eol,start   " ãƒãƒƒã‚¯ã‚¹ãƒšãƒ¼ã‚¹ã§ãªã‚“ã§ã‚‚æ¶ˆã›ã‚‹ã‚ˆã†ã«
+set formatoptions=lmoq           " ãƒ†ã‚­ã‚¹ãƒˆæ•´å½¢ã‚ªãƒ—ã‚·ãƒ§ãƒ³ï¼Œãƒãƒ«ãƒãƒã‚¤ãƒˆç³»ã‚’è¿½åŠ 
+set vb t_vb=                     " ãƒ“ãƒ¼ãƒ—ã‚’ãªã‚‰ã•ãªã„
+set browsedir=buffer             " Exploreã®åˆæœŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+set whichwrap=b,s,h,l,<,>,[,]    " ã‚«ãƒ¼ã‚½ãƒ«ã‚’è¡Œé ­ã€è¡Œæœ«ã§æ­¢ã¾ã‚‰ãªã„ã‚ˆã†ã«ã™ã‚‹
+set showcmd                      " ã‚³ãƒãƒ³ãƒ‰ã‚’ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹è¡Œã«è¡¨ç¤º
+set showmode                     " ç¾åœ¨ã®ãƒ¢ãƒ¼ãƒ‰ã‚’è¡¨ç¤º
+set viminfo='50,<1000,s100,\"50  " viminfoãƒ•ã‚¡ã‚¤ãƒ«ã®è¨­å®š
+set modelines=0                  " ãƒ¢ãƒ¼ãƒ‰ãƒ©ã‚¤ãƒ³ã¯ç„¡åŠ¹
+set noundofile			 " undoãƒ•ã‚¡ã‚¤ãƒ«ã¨ã‹
+set notitle                      " vimã‚’ä½¿ã£ã¦ãã‚Œã¦ã‚ã‚ŠãŒã¨ã†
 set nowrap
 
 
-"ƒ„ƒ“ƒN‚µ‚½•¶š‚ÍAƒVƒXƒeƒ€‚ÌƒNƒŠƒbƒvƒ{[ƒh‚É“ü‚ê‚é"
+"ãƒ¤ãƒ³ã‚¯ã—ãŸæ–‡å­—ã¯ã€ã‚·ã‚¹ãƒ†ãƒ ã®ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã«å…¥ã‚Œã‚‹"
 "set clipboard=unnamed
-" ‘}“üƒ‚[ƒh‚ÅCtrl+k‚ğ‰Ÿ‚·‚ÆƒNƒŠƒbƒvƒ{[ƒh‚Ì“à—e‚ğ“\‚è•t‚¯‚ç‚ê‚é‚æ‚¤‚É‚·‚é "
+" æŒ¿å…¥ãƒ¢ãƒ¼ãƒ‰ã§Ctrl+kã‚’æŠ¼ã™ã¨ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã®å†…å®¹ã‚’è²¼ã‚Šä»˜ã‘ã‚‰ã‚Œã‚‹ã‚ˆã†ã«ã™ã‚‹ "
 imap <C-p>  <ESC>"*pa
 
-" Ev/Rv‚Åvimrc‚Ì•ÒW‚Æ”½‰f
+" Ev/Rvã§vimrcã®ç·¨é›†ã¨åæ˜ 
 command! Ev edit $MYVIMRC
 command! Rv source $MYVIMRC
 
 set helpfile=$VIMRUNTIME/doc/help.txt
 
-" ƒtƒ@ƒCƒ‹ƒ^ƒCƒv”»’è‚ğon
+" ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—åˆ¤å®šã‚’on
 filetype plugin on

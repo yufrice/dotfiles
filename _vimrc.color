@@ -6,8 +6,6 @@
 colorscheme molokai
 
 set t_Co=256
-set t_Sf=[3%dm
-set t_Sb=[4%dm
 
 set guioptions-=T
 set lines=90 columns=200
