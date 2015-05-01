@@ -1,16 +1,16 @@
-# ‚±‚Ì viminfo ƒtƒ@ƒCƒ‹‚Í Vim 7.4 ‚É‚æ‚Á‚Ä¶¬‚³‚ê‚Ü‚µ‚½.
-# •ÏX‚·‚éÛ‚É‚Í\•ª’ˆÓ‚µ‚Ä‚­‚¾‚³‚¢!
+ï»¿# ã“ã® viminfo ãƒ•ã‚¡ã‚¤ãƒ«ã¯ Vim 7.4 ã«ã‚ˆã£ã¦ç”Ÿæˆã•ã‚Œã¾ã—ãŸ.
+# å¤‰æ›´ã™ã‚‹éš›ã«ã¯ååˆ†æ³¨æ„ã—ã¦ãã ã•ã„!
 
-# ‚±‚Ìƒtƒ@ƒCƒ‹‚ª‘‚©‚ê‚½Žž‚Ì 'encoding' ‚Ì’l
+# ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ãŒæ›¸ã‹ã‚ŒãŸæ™‚ã® 'encoding' ã®å€¤
 *encoding=cp932
 
 
 # hlsearch on (H) or off (h):
 ~H
-# ÅŒã‚Ì ŒŸõƒpƒ^[ƒ“:
+# æœ€å¾Œã® æ¤œç´¢ãƒ‘ã‚¿ãƒ¼ãƒ³:
 ~MSle0~/ rerde
 
-# ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“ €–Ú‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì‚Ö):
+# ã‚³ãƒžãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ é …ç›®ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®ã¸):
 :q
 :wq
 :echo &background ==# 'light'
@@ -49,27 +49,27 @@
 :VimShell
 :q1
 
-# ŒŸõ•¶Žš—ñ €–Ú‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì‚Ö):
+# æ¤œç´¢æ–‡å­—åˆ— é …ç›®ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®ã¸):
 ?/ rerde
 ?/a
 ?/cc
 ?/smart
 
-# Ž® €–Ú‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì‚Ö):
+# å¼ é …ç›®ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®ã¸):
 
-# “ü—Ís €–Ú‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì‚Ö):
+# å…¥åŠ›è¡Œ é …ç›®ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®ã¸):
 
-# “ü—Ís €–Ú‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì‚Ö):
+# å…¥åŠ›è¡Œ é …ç›®ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®ã¸):
 
-# ƒŒƒWƒXƒ^:
+# ãƒ¬ã‚¸ã‚¹ã‚¿:
 "0	LINE	0
 	nnoremap <Space>gd :<C-u>Gdiff<Enter>
 "1	LINE	0
-	  " 256F
+	  " 256è‰²
 "2	LINE	0
 	if &term =~ "xterm-256color" || "screen-256color"
 "3	LINE	0
-	" ƒ^[ƒ~ƒiƒ‹ƒ^ƒCƒv‚É‚æ‚éƒJƒ‰[Ý’è
+	" ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã‚¿ã‚¤ãƒ—ã«ã‚ˆã‚‹ã‚«ãƒ©ãƒ¼è¨­å®š
 "4	LINE	0
 	elseif &term =~ "xterm-debian" || &term =~ "xterm-xfree86"
 	  set t_Co=16
@@ -105,7 +105,7 @@
 ""-	CHAR	0
 	  
 
-# ƒtƒ@ƒCƒ‹ƒ}[ƒN:
+# ãƒ•ã‚¡ã‚¤ãƒ«ãƒžãƒ¼ã‚¯:
 '0  1  26  ~\_vimrc
 '1  35  23  ~\_vimrc.color
 '2  13  23  ~\_vimrc.color
@@ -117,7 +117,7 @@
 '8  20  34  ~\_vimrc.basic
 '9  6  18  ~\_vimrc.color
 
-# ƒWƒƒƒ“ƒvƒŠƒXƒg (V‚µ‚¢‚à‚Ì‚ªæ):
+# ã‚¸ãƒ£ãƒ³ãƒ—ãƒªã‚¹ãƒˆ (æ–°ã—ã„ã‚‚ã®ãŒå…ˆ):
 -'  1  26  ~\_vimrc
 -'  3  34  ~\_vimrc
 -'  35  23  ~\_vimrc.color
@@ -166,18 +166,18 @@
 -'  72  0  C:\soft\vim\NERD_tree_1
 -'  81  2  C:\soft\vim\NERD_tree_1
 -'  1  0  ~\c\DxLibExercise.cpp
--'  10  0  ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\NERD_tree_1
--'  13  0  ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\NERD_tree_1
--'  1  0  ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\NERD_tree_1
+-'  10  0  ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\NERD_tree_1
+-'  13  0  ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\NERD_tree_1
+-'  1  0  ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\NERD_tree_1
 -'  1  0  ~\_vimrc.bundle
--'  29  9  ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\Pg1C_12.cpp
--'  1  0  ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\Pg1C_12.cpp
+-'  29  9  ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\Pg1C_12.cpp
+-'  1  0  ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\Pg1C_12.cpp
 -'  99  0  C:\soft\vim\NERD_tree_1
 -'  102  2  C:\soft\vim\NERD_tree_1
 -'  18  0  ~\NERD_tree_1
 -'  29  0  ~\NERD_tree_1
 -'  1  0  ~\NERD_tree_1
--'  1  0  ~\c\Šw—Í”»’èƒeƒXƒg\ProgTech_LevelTest - ƒRƒs[ (2).cpp
+-'  1  0  ~\c\å­¦åŠ›åˆ¤å®šãƒ†ã‚¹ãƒˆ\ProgTech_LevelTest - ã‚³ãƒ”ãƒ¼ (2).cpp
 -'  1  0  ~\_vimrc.basic
 -'  4  19  ~\_vimrc
 -'  51  0  ~\_vimrc.bundle
@@ -216,7 +216,7 @@
 -'  37  0  ~\_vimrc.bundle
 -'  1  0  ~\_vimrc.syntax
 
-# ƒtƒ@ƒCƒ‹“àƒ}[ƒN‚Ì—š—ð (V‚µ‚¢‚à‚Ì‚©‚çŒÃ‚¢‚à‚Ì):
+# ãƒ•ã‚¡ã‚¤ãƒ«å†…ãƒžãƒ¼ã‚¯ã®å±¥æ­´ (æ–°ã—ã„ã‚‚ã®ã‹ã‚‰å¤ã„ã‚‚ã®):
 
 > ~\_vimrc
 	"	1	26
@@ -499,20 +499,20 @@
 	"	277	9
 	^	282	3
 
-> ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\NERD_tree_1
+> ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\NERD_tree_1
 	"	10	0
 	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
 
-> ~\c\ƒvƒƒOƒ‰ƒ~ƒ“ƒO‹ZpE‰‰K‡T_’ù³”Å2015_0414~\Pg1C_12.cpp
+> ~\c\ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°æŠ€è¡“ãƒ»æ¼”ç¿’â… _è¨‚æ­£ç‰ˆ2015_0414~\Pg1C_12.cpp
 	"	29	9
 	^	29	10
 	.	29	9
 	+	29	9
 
-> ~\c\Šw—Í”»’èƒeƒXƒg\ProgTech_LevelTest - ƒRƒs[ (2).cpp
+> ~\c\å­¦åŠ›åˆ¤å®šãƒ†ã‚¹ãƒˆ\ProgTech_LevelTest - ã‚³ãƒ”ãƒ¼ (2).cpp
 	"	168	0
 
 > ~\NERD_tree_1

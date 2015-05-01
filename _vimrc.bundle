@@ -1,4 +1,4 @@
-filetype off
+﻿filetype off
 
 " Note: Skip initialization for vim-tiny or vim-small.
  if !1 | finish | endif
@@ -21,6 +21,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " ディレクトリツリー
 NeoBundle 'wesleyche/Trinity'
+nmap <F6>   :TrinityToggleAll<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:NERDTreeDirArrows=0
+let g:NERDTreeMouseMode=0
 
 " いろいろなドキュメントに対応させる
 NeoBundle 'thinca/vim-ref'
@@ -39,7 +43,11 @@ NeoBundle 'taku-o/vim-toggle'
 
 "補完とスニペット
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippets.vim'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'justmao945/vim-clang'
+let g:clang_c_options = '-std=c11'
+let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 "vim上で簡易実行
 NeoBundle 'thinca/vim-quickrun'
@@ -49,9 +57,6 @@ NeoBundle 'errormarker.vim'
 
 " vimshell
 NeoBundle 'Shougo/vimshell.git'
-"nnoremap <Space>d :VimShellInteractive<CR>
-"nnoremap <Space>s :VimShellSendString<CR>
-"vmap <Space>s :VimShellSendString<CR>
 
 " vimproc
 NeoBundle 'Shougo/vimproc.vim', {
@@ -69,6 +74,12 @@ NeoBundle 'tpope/vim-fugitive'
 
 " ステータスラインをカッコよくする
 NeoBundle 'Lokaltog/vim-powerline'
+
+" VSと連携
+NeoBundle 'taku25/vim-visualstudio'
+let g:visualstudio_controllerpath = "c:/soft/VisualStudioController.exe"
+nmap <Leader>v   :VSBuild<CR>
+nmap <Leader>r :VSRun<CR>
 
 NeoBundle 'desert256.vim'
 NeoBundle 'mrkn256.vim'
