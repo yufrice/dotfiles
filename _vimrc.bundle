@@ -69,6 +69,9 @@ NeoBundle 'Shougo/vimproc.vim', {
 \    },
 \ }
 
+" majang
+NeoBundle 'mattn/mahjong-vim'
+
 " vimからGit操作する
 NeoBundle 'tpope/vim-fugitive'
 
@@ -80,6 +83,11 @@ NeoBundle 'taku25/vim-visualstudio'
 let g:visualstudio_controllerpath = "c:/soft/VisualStudioController.exe"
 nmap <Leader>v   :VSBuild<CR>
 nmap <Leader>r :VSRun<CR>
+
+"lisp
+NeoBundle 'kovisoft/slimv'
+let g:slimv_python = 'C:/soft/Python27/python.exe'
+let g:slimv_swank_cmd = '!start "C:/soft/Steel Bank Common Lisp/1.2.11/sbcl.exe" --load "C:/yuf/.vim/bundle/slimv/slime/start-swank.lisp"'
 
 NeoBundle 'desert256.vim'
 NeoBundle 'mrkn256.vim'
