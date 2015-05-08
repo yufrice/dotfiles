@@ -53,7 +53,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'thinca/vim-quickrun'
 
 "エラーをハイライト
-NeoBundle 'errormarker.vim'
+"NeoBundle 'errormarker.vim'
 
 " vimshell
 NeoBundle 'Shougo/vimshell.git'
