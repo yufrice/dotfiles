@@ -1,4 +1,6 @@
-﻿" YankRing.vim
+﻿filetype plugin on
+filetype indent on
+" YankRing.vim
 "nmap ,y :YRShow<CR>
 
 " NERD_commenter.vim
@@ -14,6 +16,10 @@ let NERDShutUp=1
 "nnoremap <Space>gd :<C-u>Gdiff<Enter>
 " nnoremap <Space>gs :<C-u>Gstatus<Enter>
 " nnoremap <Space>gc :<C-u>Gcommit<Enter>
+
+"errormarker 
+"let &errorformat="%f:%l:%c: %t%*[^:]:%m,%f:%l: %t%*[^:]:%m," . &errorformat
+
 
 " vim-indent-guides
 let g:indent_guides_enable_on_vim_startup=1
@@ -95,6 +101,11 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 "let g:neocomplete#enable_auto_select = 1
 "let g:neocomplete#disable_auto_complete = 1
 "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
+
+"slimv
+let g:slimv_python = 'C:/soft/Python27/python.exe'
+let g:slimv_swank_cmd = '!start "C:\soft\Steel Bank Common Lisp\1.2.11\sbcl.exe" --load "C:\yuf\.vim\bundle\slimv\slime\start-swank.lisp"'
+
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
