@@ -2,7 +2,7 @@
 " カラー関連 Colors
 "-------------------------------------------------------------------------------
 
-colorscheme mrkn256
+"colorscheme mrkn256
 "colorscheme molokai
 set t_Co=256
 

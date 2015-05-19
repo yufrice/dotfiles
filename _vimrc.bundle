@@ -15,82 +15,20 @@
 " " Required:
  call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" ディレクトリツリー
-NeoBundle 'wesleyche/Trinity'
-nmap <F6>   :TrinityToggleAll<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let g:NERDTreeDirArrows=0
-let g:NERDTreeMouseMode=0
-
-" いろいろなドキュメントに対応させる
-NeoBundle 'thinca/vim-ref'
-
-"コメントアウト
-NeoBundle 'scrooloose/nerdcommenter.git'
-
-"インデントガイド
-NeoBundle 'nathanaelkane/vim-indent-guides'
-
-"ヤンク履歴 ^C-p or ^C-n
-NeoBundle 'LeafCage/yankround.vim' 
-
-"bool等切り替え ^C-a
-NeoBundle 'taku-o/vim-toggle'
-
-"補完とスニペット
+"ふははは
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'justmao945/vim-clang'
-let g:clang_c_options = '-std=c11'
-let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
-NeoBundle 'Shougo/neosnippet-snippets'
-
-"vim上で簡易実行
-NeoBundle 'thinca/vim-quickrun'
-
-"エラーをハイライト
-"NeoBundle 'errormarker.vim'
-
-" vimshell
-NeoBundle 'Shougo/vimshell.git'
-
-" vimproc
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-
-" majang
-NeoBundle 'mattn/mahjong-vim'
-
-" vimからGit操作する
-NeoBundle 'tpope/vim-fugitive'
-
-" ステータスラインをカッコよくする
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'Shougo/vimshell.vim'
 
 " VSと連携
 NeoBundle 'taku25/vim-visualstudio'
-let g:visualstudio_controllerpath = "c:/soft/VisualStudioController.exe"
-nmap <Leader>v   :VSBuild<CR>
-nmap <Leader>r :VSRun<CR>
 
 "lisp
 NeoBundle 'kovisoft/slimv'
 
-NeoBundle 'desert256.vim'
-NeoBundle 'mrkn256.vim'
-NeoBundle 'tomasr/molokai'
-NeoBundle 'yuroyoro/yuroyoro256.vim'
 
 call neobundle#end()
 
