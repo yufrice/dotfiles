@@ -1,4 +1,7 @@
-﻿
+﻿"ネオコン
+NeoBundle has('lua') ? 'Shougo/neocomplete' : 'Shougo/neocomplcache'
+
+"vs-vim
 let g:visualstudio_controllerpath = "f:/soft/VisualStudioController.exe"
 nmap <Leader>v   :VSBuild<CR>
 nmap <Leader>r :VSRun<CR>

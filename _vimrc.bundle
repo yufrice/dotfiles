@@ -1,6 +1,6 @@
 ﻿filetype off
 
-" Note: Skip initialization for vim-tiny or vim-small.
+ " Note: Skip initialization for vim-tiny or vim-small.
  if !1 | finish | endif
 
  if has('vim_starting')
@@ -12,8 +12,9 @@
    set runtimepath+=~/.vim/bundle/neobundle.vim/
  endif
 
-" " Required:
+ " Required:
  call neobundle#begin(expand('~/.vim/bundle/'))
+
 
 "ふははは
 NeoBundle 'Shougo/neocomplete.vim'
@@ -32,4 +33,9 @@ NeoBundle 'kovisoft/slimv'
 
 call neobundle#end()
 
-filetype plugin indent on
+ " Required:
+ filetype plugin indent on
+
+ " If there are uninstalled bundles found on startup,
+ " this will conveniently prompt you to install them.
+ NeoBundleCheck
