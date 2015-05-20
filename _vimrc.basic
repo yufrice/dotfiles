@@ -21,11 +21,12 @@ set noundofile			             " undoファイルとか
 set notitle                      " vimを使ってくれてありがとう
 set nowrap
 set autoindent
+"set pastetoggle=<F12>
 
 "ヤンクした文字は、システムのクリップボードに入れる"
 set clipboard=unnamed
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
-imap <C-k>  <ESC>"*pa
+"imap <C-k>  <ESC>"*pa
 
 " Ev/Rvでvimrcの編集と反映
 command! Rc edit $MYVIMRC
