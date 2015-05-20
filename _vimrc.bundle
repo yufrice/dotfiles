@@ -29,6 +29,9 @@ NeoBundle 'justmao945/vim-clang'
 " VSと連携
 NeoBundle 'taku25/vim-visualstudio'
 
+" wandbox 
+NeoBundle 'rhysd/wandbox-vim'
+
 " lisp
 NeoBundle 'kovisoft/slimv'
 
