@@ -136,5 +136,6 @@ let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
 
 " vs-vim
 let g:visualstudio_controllerpath = "f:/soft/VisualStudioController.exe"
-nmap <Leader>v   :VSBuild<CR>
-nmap <Leader>r :VSRun<CR>
+nmap <Leader>vb   :VSBuild<CR>
+nmap <Leader>vr :VSRun<CR>
+nmap <Leader>vg :VSGetFile<CR>

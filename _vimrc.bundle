@@ -23,6 +23,10 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/neomru.vim'
+
+" git
+NeoBundle 'kmnk/vim-unite-giti.git'
+
 "  補完
 NeoBundle 'justmao945/vim-clang'
 
