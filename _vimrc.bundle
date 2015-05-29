@@ -28,7 +28,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'kmnk/vim-unite-giti.git'
 
 "  補完
-NeoBundle 'justmao945/vim-clang'
+"NeoBundle 'justmao945/vim-clang'
 
 " VSと連携
 NeoBundle 'taku25/vim-visualstudio'

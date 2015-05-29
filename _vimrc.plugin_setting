@@ -129,10 +129,16 @@ nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 "  nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
+" Wand box
+nmap <Leader>wb :Wandbox<CR>
+nmap <leader>wo :WandboxOpenBrowser<CR>
 
 " clang-vim
 let g:clang_c_options = '-std=c11'
 let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
+
+" VimShell
+nmap <Leader>sh :VimShell c:\yuf<CR>
 
 " vs-vim
 let g:visualstudio_controllerpath = "c:/soft/VisualStudioController.exe"
