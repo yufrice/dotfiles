@@ -83,22 +83,6 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
-" snipet
-" <TAB>: completion.                                         
-" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"   
-inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>" 
-
-" Plugin key-mappings.
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
 
 " snipet
 " <TAB>: completion.
@@ -133,15 +117,10 @@ nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 nmap <Leader>wb :Wandbox<CR>
 nmap <leader>wo :WandboxOpenBrowser<CR>
 
-" clang-vim
-let g:clang_c_options = '-std=c11'
-let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
 
 " VimShell
 nmap <Leader>sh :VimShell c:\yuf<CR>
 
-" vs-vim
-let g:visualstudio_controllerpath = "c:/soft/VisualStudioController.exe"
-nmap <Leader>vb   :VSBuild<CR>
-nmap <Leader>vr :VSRun<CR>
-nmap <Leader>vg :VSGetFile<CR>
+" vim-clang
+let g:clang_c_options = '-std=c11'
+let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
