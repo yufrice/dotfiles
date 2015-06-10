@@ -1,6 +1,6 @@
-﻿source ~\dotfiles/_vimrc.bundle
-source ~\dotfiles/_vimrc.basic
-source ~\dotfiles/_vimrc.indent
-source ~\dotfiles/_vimrc.plugin_setting
-source ~\dotfiles/_vimrc.syntax
-source ~\dotfiles/_vimrc.color
+﻿source ~\dotfiles/.vimrc.bundle
+source ~\dotfiles/.vimrc.basic
+source ~\dotfiles/.vimrc.indent
+source ~\dotfiles/.vimrc.plugin_setting
+source ~\dotfiles/.vimrc.syntax
+source ~\dotfiles/.vimrc.color
