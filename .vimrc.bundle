@@ -38,6 +38,15 @@ NeoBundle 'kmnk/vim-unite-giti.git'
 "  補完
 NeoBundle 'justmao945/vim-clang'
 
+" syntax hightlite
+NeoBundleLazy 'vim-jp/cpp-vim', {
+            \ 'autoload' : {'filetypes' : 'cpp'}
+            \ }
+
+" comment togle
+NeoBundle "tyru/caw.vim"
+
+
 " wandbox 
 NeoBundle 'rhysd/wandbox-vim'
 

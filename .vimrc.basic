@@ -28,6 +28,26 @@ set clipboard=unnamed
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
 "imap <C-k>  <ESC>"*pa
 
+augroup vimrc-cpp
+      autocmd!
+      autocmd FileType cpp call s:cpp()
+augroup END
+
+function! s:cpp()
+  nnoremap <buffer><silent> <Space>ii :execute "?".&include<CR> :noh<CR> o
+  syntax match boost_pp /BOOST_PP_[A-z0-9_]*/
+  highlight link boost_pp cppStatement
+  setlocal path+=/usr/include,/usr/local/include,/usr/include/boost
+endfunction
+
+" 標準ライブラリへのパスを設定
+let $CPP_STDLIB = "C:/MinGW/lib/gcc/mingw32/4.6.2/include/c++"
+
+augroup vimrc-set_filetype_cpp
+      autocmd!
+      autocmd BufReadPost $CPP_STDLIB/* if empty(&filetype) | set filetype=cpp | endif
+augroup END
+
 " Ev/Rvでvimrcの編集と反映
 command! Rc edit $MYVIMRC
 command! Rs source $MYVIMRC
