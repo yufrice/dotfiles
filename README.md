@@ -1,2 +1,2 @@
 # dotfiles
-windowsむけ
+にゃんぱすー
