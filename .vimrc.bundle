@@ -56,6 +56,14 @@ NeoBundle 'rhysd/wandbox-vim'
 " lisp
 NeoBundle 'kovisoft/slimv'
 
+" haskell
+NeoBundle 'dag/vim2hs'
+NeoBundle 'eagletmt/ghcmod-vim'
+NeoBundle 'eagletmt/neco-ghc'
+NeoBundle 'kana/vim-filetype-haskell'
+
+NeoBundle 'thinca/vim-quickrun'
+
 " カラースキーム
 NeoBundle 'tomasr/molokai'
 

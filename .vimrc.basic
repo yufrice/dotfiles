@@ -21,8 +21,11 @@ set noundofile			             " undoファイルとか
 set notitle                      " vimを使ってくれてありがとう
 set nowrap
 set autoindent
+set number
 "set pastetoggle=<F12>
 
+" qでquick fix 消す
+au FileType qf nnoremap <silent><buffer>q :quit<CR>
 "ヤンクした文字は、システムのクリップボードに入れる"
 set clipboard=unnamed
 " 挿入モードでCtrl+kを押すとクリップボードの内容を貼り付けられるようにする "
