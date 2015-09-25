@@ -63,6 +63,7 @@ NeoBundle 'eagletmt/neco-ghc'
 NeoBundle 'kana/vim-filetype-haskell'
 
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'thinca/vim-scouter'
 
 " カラースキーム
 NeoBundle 'tomasr/molokai'

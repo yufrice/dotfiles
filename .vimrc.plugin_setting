@@ -85,7 +85,7 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
 " haskell
-" let g:haskell_conceal = 0
+let g:haskell_conceal = 0
 let g:haskell_conceal_wide = 1
 
 
@@ -103,7 +103,12 @@ let g:quickrun_config._ = {
       \ 'outputter/buffer/split'  : ':rightbelow 8sp',
       \ 'outputter/buffer/close_on_empty' : 1,
       \ }
-
+let g:quickrun_config = {
+      \   "_" : {
+      \       "outputter/buffer/split" : ":botright",
+      \       "outputter/buffer/close_on_empty" : 1
+      \   },
+      \}
 
 let g:quickrun_no_default_key_mappings = 1
 nnoremap \r :write<CR>:QuickRun -mode n<CR>        
