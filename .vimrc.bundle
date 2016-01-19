@@ -71,6 +71,9 @@ NeoBundle 'thinca/vim-scouter'
 " カラースキーム
 NeoBundle 'tomasr/molokai'
 
+" w3m for vim
+NeoBundle 'yuratomo/w3m.vim'
+
 
 call neobundle#end()
 
