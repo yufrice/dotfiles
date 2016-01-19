@@ -1,0 +1,7 @@
+"~/bin/alttab.sh"
+	m:0x8 + c:108
+	Alt + Alt_R
+
+"~/bin/toast-alc.rb"
+	m:0x0 + c:100
+	Henkan_Mode

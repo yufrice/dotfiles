@@ -62,6 +62,9 @@ NeoBundle 'eagletmt/ghcmod-vim'
 NeoBundle 'eagletmt/neco-ghc'
 NeoBundle 'kana/vim-filetype-haskell'
 
+" over thikan
+NeoBundle 'osyo-manga/vim-over'
+
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'thinca/vim-scouter'
 
