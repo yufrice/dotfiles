@@ -74,6 +74,9 @@ NeoBundle 'tomasr/molokai'
 " w3m for vim
 NeoBundle 'yuratomo/w3m.vim'
 
+" twitter
+NeoBundle 'twitvim/twitvim'
+
 
 call neobundle#end()
 

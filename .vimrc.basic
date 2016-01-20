@@ -56,6 +56,9 @@ command! Rc edit $MYVIMRC
 command! Rs source $MYVIMRC
 
 set helpfile=$VIMRUNTIME/doc/help.txt
+if executable('pdftotext')
+  command! -complete=file -nargs=1 Pdf :r !pdftotext -nopgbrk -layout <q-args> -
+endif
 
 " ファイルタイプ判定をon
 filetype plugin on

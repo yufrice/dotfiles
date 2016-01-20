@@ -113,3 +113,7 @@ let g:quickrun_config = {
 let g:quickrun_no_default_key_mappings = 1
 nnoremap \r :write<CR>:QuickRun -mode n<CR>        
 xnoremap \r :<C-U>write<CR>gv:QuickRun -mode v<CR> 
+
+" twitter
+let twitvim_force_ssl = 1 
+let twitvim_count = 40
