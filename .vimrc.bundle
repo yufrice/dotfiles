@@ -75,7 +75,12 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'yuratomo/w3m.vim'
 
 " twitter
-NeoBundle 'twitvim/twitvim'
+" NeoBundle 'twitvim/twitvim'
+NeoBundle 'basyura/TweetVim'
+
+" tmux
+NeoBundle 'christoomey/vim-tmux-navigator'
+
 
 
 call neobundle#end()
