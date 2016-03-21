@@ -10,7 +10,7 @@ endif
 
 call dein#begin(s:dein_dir)
 
-let s:toml      = '~/dotifiles/dein.toml'
+let s:toml      = '~/dotfiles/dein.toml'
 let s:lazy_toml = '~/dotfiles/dein_lazy.toml'
 
 if dein#load_cache([expand('<sfile>'), s:toml, s:lazy_toml])

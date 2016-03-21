@@ -88,5 +88,3 @@ repo = 'Shougo/vinarise'
 name = 'color/w3m.vim'
 repo = 'yuratomo/w3m.vim'
 ##################################
-
-call dein#end()
