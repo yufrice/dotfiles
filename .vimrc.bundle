@@ -1,26 +1,22 @@
-﻿filetype off
+﻿let s:dein_dir = expand('~/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-" Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
-
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim'
+    s:dein_repo_dir
   endif
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
-"
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
+
+call dein#begin(s:dein_dir)
 
 " ふははは
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimproc.vim', {
+Dein#add ('Shougo/neocomplete.vim')
+Dein#add ('Shougo/neosnippet')
+Dein#add ('Shougo/neosnippet-snippets')
+Dein#add ('Shougo/unite.vim')
+Dein#add ('Shougo/vimproc.vim', {
 \ 'build' : {
 \     'windows' : 'tools\\update-dll-mingw',
 \     'cygwin' : 'make -f make_cygwin.mak',
@@ -28,75 +24,71 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'linux' : 'make',
 \     'unix' : 'gmake',
 \    },
-\ }
-NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'Shougo/vinarise'
+\ })
+Dein#add ('Shougo/vimshell.vim')
+Dein#add ('Shougo/neomru.vim')
+Dein#add ('Shougo/vinarise')
 
 " Lazy
-NeoBundle 'LeafCage/nebula.vim'
+Dein#add ('LeafCage/nebula.vim')
 
 " git
-NeoBundle 'kmnk/vim-unite-giti.git'
+Dein#add ('kmnk/vim-unite-giti.git')
 
 "  補完
-NeoBundleLazy 'justmao945/vim-clang', {
+Dein#addLazy ('justmao945/vim-clang', {
       \ 'autoload' : {'filetypes' :  'cpp'}
-      \ }
+      \ })
 
-NeoBundleLazy 'rhysd/vim-clang-format', {
+Dein#addLazy ('rhysd/vim-clang-format', {
       \ 'autoload' : {'filetypes' : 'cpp'}
-      \ }
+      \ })
 
 " memo
-NeoBundle 'glidenote/memolist.vim'
+Dein#add ('glidenote/memolist.vim')
 
 " syntax hightlite
-NeoBundleLazy 'vim-jp/cpp-vim', {
+Dein#addLazy ('vim-jp/cpp-vim', {
             \ 'autoload' : {'filetypes' : 'cpp'}
-            \ }
+            \ })
 
 " comment togle
-NeoBundle "tyru/caw.vim"
+Dein#add ("tyru/caw.vim")
 
 
 " wandbox 
-NeoBundle 'rhysd/wandbox-vim'
+Dein#add ('rhysd/wandbox-vim')
 
 " lisp
-NeoBundleLazy 'kovisoft/slimv', {
+Dein#addLazy ('kovisoft/slimv', {
       \ 'autoload' : {'filetypes' : 'lisp'}
-      \ }
+      \ })
 
 " haskell
-NeoBundleLazy 'dag/vim2hs', {'autoload': {'mappings': [['sx', '<Plug>InnerOffside']], 'commands': ['HPaste', 'LPaste']}}
-NeoBundleLazy 'eagletmt/ghcmod-vim', {'autoload': {'commands': ['GhcModDiagnostics']}}
-NeoBundleLazy 'eagletmt/neco-ghc', {'autoload': {'commands': ['NecoGhcCaching', 'NecoGhcDiagnostics']}}
-NeoBundleLazy 'kana/vim-filetype-haskell', {'autoload' : {'filetypes' : 'haskell'}}
+Dein#addLazy ('dag/vim2hs', {'autoload': {'mappings': [['sx', '<Plug>InnerOffside']], 'commands': ['HPaste', 'LPaste']}})
+Dein#addLazy ('eagletmt/ghcmod-vim', {'autoload': {'commands': ['GhcModDiagnostics']}})
+Dein#addLazy ('eagletmt/neco-ghc', {'autoload': {'commands': ['NecoGhcCaching', 'NecoGhcDiagnostics']}})
+Dein#addLazy ('kana/vim-filetype-haskell', {'autoload' : {'filetypes' : 'haskell'}})
 
 " over thikan
-NeoBundle 'osyo-manga/vim-over'
+Dein#add ('osyo-manga/vim-over')
 
-NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'thinca/vim-scouter'
+Dein#add ('thinca/vim-quickrun')
+Dein#add ('thinca/vim-scouter')
 
 " カラースキーム
-NeoBundle 'tomasr/molokai'
+Dein#add ('tomasr/molokai')
 
 " w3m for vim
-NeoBundle 'yuratomo/w3m.vim'
+Dein#add ('yuratomo/w3m.vim')
 
 " twitter
-" NeoBundle 'twitvim/twitvim'
-NeoBundle 'basyura/TweetVim'
+" NeoBundle ('twitvim/twitvim')
+Dein#add ('basyura/TweetVim')
 
 " tmux
-NeoBundle 'christoomey/vim-tmux-navigator'
+Dein#add ('christoomey/vim-tmux-navigator')
 
 
 
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
+call dein#end()
