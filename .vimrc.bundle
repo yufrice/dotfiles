@@ -33,11 +33,20 @@ NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/vinarise'
 
+" Lazy
+NeoBundle 'LeafCage/nebula.vim'
+
 " git
 NeoBundle 'kmnk/vim-unite-giti.git'
 
 "  補完
-NeoBundle 'justmao945/vim-clang'
+NeoBundleLazy 'justmao945/vim-clang', {
+      \ 'autoload' : {'filetypes' :  'cpp'}
+      \ }
+
+NeoBundleLazy 'rhysd/vim-clang-format', {
+      \ 'autoload' : {'filetypes' : 'cpp'}
+      \ }
 
 " memo
 NeoBundle 'glidenote/memolist.vim'
@@ -55,13 +64,15 @@ NeoBundle "tyru/caw.vim"
 NeoBundle 'rhysd/wandbox-vim'
 
 " lisp
-NeoBundle 'kovisoft/slimv'
+NeoBundleLazy 'kovisoft/slimv', {
+      \ 'autoload' : {'filetypes' : 'lisp'}
+      \ }
 
 " haskell
-NeoBundle 'dag/vim2hs'
-NeoBundle 'eagletmt/ghcmod-vim'
-NeoBundle 'eagletmt/neco-ghc'
-NeoBundle 'kana/vim-filetype-haskell'
+NeoBundleLazy 'dag/vim2hs', {'autoload': {'mappings': [['sx', '<Plug>InnerOffside']], 'commands': ['HPaste', 'LPaste']}}
+NeoBundleLazy 'eagletmt/ghcmod-vim', {'autoload': {'commands': ['GhcModDiagnostics']}}
+NeoBundleLazy 'eagletmt/neco-ghc', {'autoload': {'commands': ['NecoGhcCaching', 'NecoGhcDiagnostics']}}
+NeoBundleLazy 'kana/vim-filetype-haskell', {'autoload' : {'filetypes' : 'haskell'}}
 
 " over thikan
 NeoBundle 'osyo-manga/vim-over'

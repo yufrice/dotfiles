@@ -60,5 +60,10 @@ if executable('pdftotext')
   command! -complete=file -nargs=1 Pdf :r !pdftotext -nopgbrk -layout <q-args> -
 endif
 
+augroup cpp-path
+  autocmd!
+  autocmd FileType cpp setlocal path=.,/usr/include,/usr/local/include
+augroup END
+
 " ファイルタイプ判定をon
 filetype plugin on
