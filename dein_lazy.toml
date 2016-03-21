@@ -1,0 +1,56 @@
+﻿[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+on_i = 1
+
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+[[plugins]]
+repo      = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+#####cpp############################
+[[plugins]]
+name = 'cpp/vim-clang'
+repo = 'justmao945/vim-clang'
+on_ft = ['cpp']
+
+[[plugins]]
+name = 'cpp/vim-clang-format'
+repo = 'rhysd/vim-clang-format'
+on_ft = ['cpp']
+
+[[plugins]]
+name = 'cpp/cpp-vim'
+repo = 'vim-jp/cpp-vim'
+on_ft = ['cpp']
+####################################
+
+#####lisp###########################
+[[plugins]]
+name = 'lisp/slimv'
+repo = 'kovisoft/slimv'
+on_ft = ['lisp']
+####################################
+
+#####haskell########################
+[[plugins]]
+name = 'haskell/vim2hs'
+repo = 'dag/vim2hs'
+on_ft = ['haskell']
+
+[[plugins]]
+name = 'haskell/ghcmod-vim'
+repo = 'eagletmt/ghcmod-vim'
+on_ft = ['haskell']
+
+[[plugins]]
+name = 'haskell/neco-ghc'
+repo = 'eagletmt/neco-ghc'
+on_ft = ['haskell']
+
+[[plugins]]
+name = 'haskell/vim-filetype-haskell'
+repo = 'kana/vim-filetype-haskell'
+on_ft = ['haskell']
+####################################

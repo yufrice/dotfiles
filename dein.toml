@@ -1,0 +1,92 @@
+﻿#####basic########################
+[[plugins]]
+name = 'basic/dein.vim'
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+name = 'basic/vimproc.vim'
+repo = 'Shougo/vimproc.vim'
+
+	[plugins.build]
+	windows = 'tools\\update-dll-mingw'
+	cygwin = 'make -f make_cygwin.mak'
+	mac = 'make -f make_mac.mak'
+	linux = 'make'
+	unix = 'gmake'
+##################################
+
+
+#####git##########################
+[[plugins]]
+name = 'git/vim-unite=giti.git'
+repo ='kmnk/vim-unite-giti.git'
+##################################
+
+
+#####memo#########################
+[[plugins]]
+name = 'memo/memolist.vim'
+repo = 'glidenote/memolist.vim'
+##################################
+
+
+#####text##########################
+[[plugins]]
+name = 'text/molokai'
+repo = 'tomasr/molokai'
+
+[[plugins]]
+name = "text/caw.vim"
+repo = "tyru/caw.vim"
+
+[[plugins]]
+name = 'text/neosnippet'
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+name = 'text/neosnippet-snippets'
+repo = 'Shougo/neosnippet-snippets'
+##################################
+
+#####util#########################
+[[plugins]]
+name = 'util/wandbox-vim'
+repo = 'rhysd/wandbox-vim'
+
+[[plugins]]
+name = 'util/vim-quickrun'
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+name = 'util/vim-scouter'
+repo = 'thinca/vim-scouter'
+
+[[plugins]]
+name = 'util/TweetVim'
+repo = 'basyura/TweetVim'
+
+[[plugins]]
+name = 'util/vim-tmux-navigator'
+repo = 'christoomey/vim-tmux-navigator'
+
+[[plugins]]
+name = 'util/vim-over'
+repo = 'osyo-manga/vim-over'
+
+[[plugins]]
+name = 'util/vimshell.vim'
+repo = 'Shougo/vimshell.vim'
+
+[[plugins]]
+name = 'util/vinarise'
+repo = 'Shougo/vinarise'
+##################################
+
+
+#####color########################
+[[plugins]]
+name = 'color/w3m.vim'
+repo = 'yuratomo/w3m.vim'
+##################################
+
+call dein#end()
