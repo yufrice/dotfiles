@@ -1,10 +1,10 @@
 ﻿#####basic########################
 [[plugins]]
-name = 'basic/dein.vim'
+name = 'basic/dein'
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-name = 'basic/vimproc.vim'
+name = 'basic/vimproc'
 repo = 'Shougo/vimproc.vim'
 
 	[plugins.build]
@@ -17,15 +17,12 @@ repo = 'Shougo/vimproc.vim'
 
 
 #####git##########################
-[[plugins]]
-name = 'git/vim-unite-giti.git'
-repo ='kmnk/vim-unite-giti.git'
 ##################################
 
 
 #####memo#########################
 [[plugins]]
-name = 'memo/memolist.vim'
+name = 'memo/memolist'
 repo = 'glidenote/memolist.vim'
 ##################################
 
@@ -36,7 +33,7 @@ name = 'text/molokai'
 repo = 'tomasr/molokai'
 
 [[plugins]]
-name = "text/caw.vim"
+name = "text/caw"
 repo = "tyru/caw.vim"
 
 [[plugins]]
@@ -48,9 +45,14 @@ name = 'text/neosnippet-snippets'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-name = 'name/deoplete.nvim'
+name = 'text/vim-indent-guides'
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+name = 'text/deoplete'
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
+
 ##################################
 
 #####util#########################
@@ -79,7 +81,7 @@ name = 'util/vim-over'
 repo = 'osyo-manga/vim-over'
 
 [[plugins]]
-name = 'util/vimshell.vim'
+name = 'util/vimshell'
 repo = 'Shougo/vimshell.vim'
 
 [[plugins]]
@@ -90,20 +92,23 @@ repo = 'Shougo/vinarise'
 
 #####color########################
 [[plugins]]
-name = 'color/w3m.vim'
+name = 'color/w3m'
 repo = 'yuratomo/w3m.vim'
 ##################################
 
 #####ui###########################
 
 [[plugins]]
-repo   = 'Shougo/unite.vim'
-lazy = 1
+name = 'ui/unite'
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
-repo      = 'Shougo/neomru.vim'
-on_source = ['unite.vim']
-lazy = 1
+name = 'ui/neomru'
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+name = 'ui/vim-unite-giti'
+repo = 'kmnk/vim-unite-giti.git'
 
 ####################################
 
@@ -111,19 +116,19 @@ lazy = 1
 [[plugins]]
 name = 'cpp/vim-clang'
 repo = 'justmao945/vim-clang'
-on_ft = ['cpp']
+on_ft = 'cpp'
 lazy = 1
 
 [[plugins]]
 name = 'cpp/vim-clang-format'
 repo = 'rhysd/vim-clang-format'
-on_ft = ['cpp']
+on_ft = 'cpp'
 lazy = 1
 
 [[plugins]]
 name = 'cpp/cpp-vim'
 repo = 'vim-jp/cpp-vim'
-on_ft = ['cpp']
+on_ft = 'cpp'
 lazy = 1
 ####################################
 
@@ -131,7 +136,7 @@ lazy = 1
 [[plugins]]
 name = 'lisp/slimv'
 repo = 'kovisoft/slimv'
-on_ft = ['lisp']
+on_ft = 'lisp'
 lazy = 1
 ####################################
 
@@ -139,24 +144,24 @@ lazy = 1
 [[plugins]]
 name = 'haskell/vim2hs'
 repo = 'dag/vim2hs'
-on_ft = ['haskell']
+on_ft = 'haskell'
 lazy = 1
 
 [[plugins]]
 name = 'haskell/ghcmod-vim'
 repo = 'eagletmt/ghcmod-vim'
-on_ft = ['haskell']
+on_ft = 'haskell'
 lazy = 1
 
 [[plugins]]
 name = 'haskell/neco-ghc'
 repo = 'eagletmt/neco-ghc'
-on_ft = ['haskell']
+on_ft = 'haskell'
 lazy = 1
 
 [[plugins]]
 name = 'haskell/vim-filetype-haskell'
 repo = 'kana/vim-filetype-haskell'
-on_ft = ['haskell']
+on_ft = 'haskell'
 lazy = 1
 ####################################

@@ -13,6 +13,9 @@ let s:toml      = '~/dotfiles/dein.toml'
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml(s:toml)
+  for plugin_name in keys(dein#get())
+        let s:plugin = dein#get(plugin_name)
+    endfor
   call dein#end()
   call dein#save_state()
 endif

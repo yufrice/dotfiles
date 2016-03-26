@@ -55,8 +55,8 @@ let g:slimv_preferred = 'sbcl'
 let g:list_rainbow = 1
 
 " togle comment
-nmap <Leader><Space> <Plug>(caw:i:toggle)
-vmap <Leader><Space> <Plug>(caw:i:toggle)
+nmap <Leader><Space> <Plug>(caw:tildepos:toggle)
+vmap <Leader><Space> <Plug>(caw:tildepos:toggle)
 
 " memo
 map <Leader>mn  :MemoNew<CR>
