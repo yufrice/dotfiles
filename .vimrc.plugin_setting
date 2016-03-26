@@ -31,17 +31,25 @@ nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 nmap <Leader>wb :Wandbox<CR>
 nmap <leader>wo :WandboxOpenBrowser<CR>
 
-
 " VimShell
 nmap <Leader>sh :VimShell<CR>
 
-" vim-clang
-let g:clang_c_options = '-std=gnu11'
-let g:clang_c_completeopt = 'menuone'
-let g:clang_cpp_options = '-std=c++14 -stdlib=libc++ --pedantic-errors'
-let g:clang_cpp_completeopt = 'menuone'
-let g:clang_use_path = 1
-let g:clang_auto = 1
+" deoplate
+let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_smart_case = 1
+
+" deoplete-clang
+let g:deoplete#sources#clang#libclang_path="/usr/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header="/usr/lib/clang"
+
+" clang-format
+let g:clang_format#style_options = {
+      \ 'AccessModifierOffset' : -4,
+      \ 'AllowShortIfStatementsOnASingleLine' : 'true',
+      \ 'AlwaysBreakTemplateDeclarations' : 'true',
+      \ 'Standard' : 'C++14',
+      \ 'BreakBeforeBraces' : 'Stroustrup',
+      \ }
 
 " lisp
 let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/slimv/slime/start-swank.lisp &'
@@ -93,18 +101,7 @@ let g:quickrun_no_default_key_mappings = 1
 nnoremap \r :write<CR>:QuickRun -mode n<CR>        
 xnoremap \r :<C-U>write<CR>gv:QuickRun -mode v<CR> 
 
-" clang-format
-let g:clang_format#style_options = {
-      \ 'AccessModifierOffset' : -4,
-      \ 'AllowShortIfStatementsOnASingleLine' : 'true',
-      \ 'AlwaysBreakTemplateDeclarations' : 'true',
-      \ 'Standard' : 'C++11',
-      \ 'BreakBeforeBraces' : 'Stroustrup',
-      \ }
-
 
 " twitter
 let twitvim_force_ssl = 1 
 let twitvim_count = 40
-
-let g:deoplete#enable_at_startup = 1

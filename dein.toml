@@ -52,6 +52,7 @@ repo = 'nathanaelkane/vim-indent-guides'
 name = 'text/deoplete'
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
+lazy = 1
 
 ##################################
 
@@ -114,8 +115,8 @@ repo = 'kmnk/vim-unite-giti.git'
 
 #####cpp############################
 [[plugins]]
-name = 'cpp/vim-clang'
-repo = 'justmao945/vim-clang'
+name = 'cpp/deoplete-clang'
+repo = 'zchee/deoplete-clang'
 on_ft = 'cpp'
 lazy = 1
 
@@ -126,8 +127,8 @@ on_ft = 'cpp'
 lazy = 1
 
 [[plugins]]
-name = 'cpp/cpp-vim'
-repo = 'vim-jp/cpp-vim'
+name = 'cpp/vim-cpp'
+repo = 'vim-jp/vim-cpp'
 on_ft = 'cpp'
 lazy = 1
 ####################################
