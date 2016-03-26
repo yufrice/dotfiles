@@ -43,7 +43,6 @@ let g:clang_cpp_completeopt = 'menuone'
 let g:clang_use_path = 1
 let g:clang_auto = 1
 
-
 " lisp
 let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/bundle/slimv/slime/start-swank.lisp &'
 let g:slimv_repl_split = 'REPL'

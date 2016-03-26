@@ -27,11 +27,9 @@ set fileencoding=UTF-8
 set termencoding=UTF-8
 set vb t_vb=
 set novisualbell
-set clipboard=unnamed,autoselect
 set list
 set ruler
 set nocompatible
-set matchparis& matchparis+=<:>
 set showmatch
 set matchtime=3
 set shiftround
@@ -45,11 +43,10 @@ set smartindent
 set laststatus=2
 set cmdheight=2
 set wildmenu
-set wildmenu=list:longest
 set wrapscan
 set pastetoggle=<F12>
 set mouse=a
-set ttymouse=xterm2
+set wildmode=list:longest
 
 
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
@@ -58,6 +55,8 @@ imap <C-k>  <ESC>"*pa
 if executable('pdftotext')
   command! -complete=file -nargs=1 Pdf :r !pdftotext -nopgbrk -layout <q-args> -
 endif
+
+
 
 " ファイルタイプ判定をon
 filetype plugin on
