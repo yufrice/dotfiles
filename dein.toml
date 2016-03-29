@@ -7,54 +7,31 @@ repo = 'Shougo/dein.vim'
 name = 'basic/vimproc'
 repo = 'Shougo/vimproc.vim'
 
-	[plugins.build]
-	windows = 'tools\\update-dll-mingw'
-	cygwin = 'make -f make_cygwin.mak'
-	mac = 'make -f make_mac.mak'
-	linux = 'make'
-	unix = 'gmake'
+[plugins.build]
+windows = 'tools\\update-dll-mingw'
+cygwin = 'make -f make_cygwin.mak'
+mac = 'make -f make_mac.mak'
+linux = 'make'
+unix = 'gmake'
 ##################################
 
 
 #####git##########################
 ##################################
 
-
-#####memo#########################
+#####ui###########################
 [[plugins]]
-name = 'memo/memolist'
-repo = 'glidenote/memolist.vim'
-##################################
-
-
-#####text##########################
-[[plugins]]
-name = 'text/molokai'
-repo = 'tomasr/molokai'
+name = 'ui/unite'
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
-name = "text/caw"
-repo = "tyru/caw.vim"
+name = 'ui/neomru'
+repo = 'Shougo/neomru.vim'
 
 [[plugins]]
-name = 'text/neosnippet'
-repo = 'Shougo/neosnippet'
-
-[[plugins]]
-name = 'text/neosnippet-snippets'
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
-name = 'text/vim-indent-guides'
-repo = 'nathanaelkane/vim-indent-guides'
-
-[[plugins]]
-name = 'text/deoplete'
-repo = 'Shougo/deoplete.nvim'
-on_i = 1
-lazy = 1
-
-##################################
+name = 'ui/vim-unite-giti'
+repo = 'kmnk/vim-unite-giti.git'
+####################################
 
 #####util#########################
 [[plugins]]
@@ -88,81 +65,34 @@ repo = 'Shougo/vimshell.vim'
 [[plugins]]
 name = 'util/vinarise'
 repo = 'Shougo/vinarise'
+
+[[plugins]]
+name = 'util/memolist'
+repo = 'glidenote/memolist.vim'
 ##################################
 
-
-#####color########################
+#####text##########################
 [[plugins]]
-name = 'color/w3m'
+name = "text/badwolf"
+repo = "sjl/badwolf"
+
+[[plugins]]
+name = "text/caw"
+repo = "tyru/caw.vim"
+
+[[plugins]]
+name = 'text/neosnippet'
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+name = 'text/neosnippet-snippets'
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+name = 'text/vim-indent-guides'
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+name = 'text/w3m'
 repo = 'yuratomo/w3m.vim'
 ##################################
-
-#####ui###########################
-
-[[plugins]]
-name = 'ui/unite'
-repo = 'Shougo/unite.vim'
-
-[[plugins]]
-name = 'ui/neomru'
-repo = 'Shougo/neomru.vim'
-
-[[plugins]]
-name = 'ui/vim-unite-giti'
-repo = 'kmnk/vim-unite-giti.git'
-
-####################################
-
-#####cpp############################
-[[plugins]]
-name = 'cpp/deoplete-clang'
-repo = 'zchee/deoplete-clang'
-on_ft = 'cpp'
-lazy = 1
-
-[[plugins]]
-name = 'cpp/vim-clang-format'
-repo = 'rhysd/vim-clang-format'
-on_ft = 'cpp'
-lazy = 1
-
-[[plugins]]
-name = 'cpp/vim-cpp'
-repo = 'vim-jp/vim-cpp'
-on_ft = 'cpp'
-lazy = 1
-####################################
-
-#####lisp###########################
-[[plugins]]
-name = 'lisp/slimv'
-repo = 'kovisoft/slimv'
-on_ft = 'lisp'
-lazy = 1
-####################################
-
-#####haskell########################
-[[plugins]]
-name = 'haskell/vim2hs'
-repo = 'dag/vim2hs'
-on_ft = 'haskell'
-lazy = 1
-
-[[plugins]]
-name = 'haskell/ghcmod-vim'
-repo = 'eagletmt/ghcmod-vim'
-on_ft = 'haskell'
-lazy = 1
-
-[[plugins]]
-name = 'haskell/neco-ghc'
-repo = 'eagletmt/neco-ghc'
-on_ft = 'haskell'
-lazy = 1
-
-[[plugins]]
-name = 'haskell/vim-filetype-haskell'
-repo = 'kana/vim-filetype-haskell'
-on_ft = 'haskell'
-lazy = 1
-####################################
