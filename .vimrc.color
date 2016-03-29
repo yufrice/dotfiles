@@ -11,7 +11,6 @@
 syntax enable
 
 colorscheme badwolf
-highlight Normal ctermbg=none
 
 set t_Co=256
 set t_Sf=[3%dm
