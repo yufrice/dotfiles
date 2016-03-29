@@ -1,10 +1,10 @@
 ﻿"-------------------------------------------------------------------------------
 " 基本設定 Basics
 "-------------------------------------------------------------------------------
-let mapleader = ","              
-set scrolloff=5 
+let mapleader = ","
+set scrolloff=5
 set textwidth=0
-set nobackup                      
+set nobackup
 set autoread
 set noswapfile
 set nowritebackup
@@ -13,12 +13,12 @@ set backspace=indent,eol,start
 set formatoptions=lmoq
 set browsedir=buffer
 set whichwrap=b,s,h,l,<,>,[,]
-set showcmd                 
-set showmode                     
+set showcmd
+set showmode
 set viminfo='50,<1000,s100,\"50
-set modelines=0                  
-set noundofile			             
-set notitle                   
+set modelines=0
+set noundofile
+set notitle
 set nowrap
 set autoindent
 set number
@@ -34,7 +34,6 @@ set showmatch
 set matchtime=3
 set shiftround
 set infercase
-set virtualedit=all
 set ignorecase
 set smartcase
 set incsearch
