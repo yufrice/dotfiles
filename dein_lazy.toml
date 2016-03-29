@@ -1,52 +1,43 @@
 ﻿#####text##########################
 [[plugins]]
-name = 'text/deoplete'
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
 ##################################
 
 #####cpp############################
 [[plugins]]
-name = 'cpp/deoplete-clang'
 repo = 'zchee/deoplete-clang'
 on_ft = 'cpp'
 
 [[plugins]]
-name = 'cpp/vim-clang-format'
 repo = 'rhysd/vim-clang-format'
 on_ft = 'cpp'
 
 [[plugins]]
-name = 'cpp/vim-cpp'
 repo = 'vim-jp/vim-cpp'
 on_ft = 'cpp'
 ####################################
 
 #####lisp###########################
 [[plugins]]
-name = 'lisp/slimv'
 repo = 'kovisoft/slimv'
 on_ft = 'lisp'
 ####################################
 
 #####haskell########################
 [[plugins]]
-name = 'haskell/vim2hs'
 repo = 'dag/vim2hs'
 on_ft = 'haskell'
 
 [[plugins]]
-name = 'haskell/ghcmod-vim'
 repo = 'eagletmt/ghcmod-vim'
 on_ft = 'haskell'
 
 [[plugins]]
-name = 'haskell/neco-ghc'
 repo = 'eagletmt/neco-ghc'
 on_ft = 'haskell'
 
 [[plugins]]
-name = 'haskell/vim-filetype-haskell'
 repo = 'kana/vim-filetype-haskell'
 on_ft = 'haskell'
 ####################################

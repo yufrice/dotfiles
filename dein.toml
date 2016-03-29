@@ -1,10 +1,8 @@
 ﻿#####basic########################
 [[plugins]]
-name = 'basic/dein'
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-name = 'basic/vimproc'
 repo = 'Shougo/vimproc.vim'
 
 [plugins.build]
@@ -21,78 +19,63 @@ unix = 'gmake'
 
 #####ui###########################
 [[plugins]]
-name = 'ui/unite'
 repo = 'Shougo/unite.vim'
 
 [[plugins]]
-name = 'ui/neomru'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
-name = 'ui/vim-unite-giti'
 repo = 'kmnk/vim-unite-giti.git'
+
+[[plugins]]
+repo = 'miyakogi/seiya.vim'
 ####################################
 
 #####util#########################
 [[plugins]]
-name = 'util/wandbox-vim'
 repo = 'rhysd/wandbox-vim'
 
 [[plugins]]
-name = 'util/vim-quickrun'
 repo = 'thinca/vim-quickrun'
 
 [[plugins]]
-name = 'util/vim-scouter'
 repo = 'thinca/vim-scouter'
 
 [[plugins]]
-name = 'util/TweetVim'
 repo = 'basyura/TweetVim'
 
 [[plugins]]
-name = 'util/vim-tmux-navigator'
 repo = 'christoomey/vim-tmux-navigator'
 
 [[plugins]]
-name = 'util/vim-over'
 repo = 'osyo-manga/vim-over'
 
 [[plugins]]
-name = 'util/vimshell'
 repo = 'Shougo/vimshell.vim'
 
 [[plugins]]
-name = 'util/vinarise'
 repo = 'Shougo/vinarise'
 
 [[plugins]]
-name = 'util/memolist'
 repo = 'glidenote/memolist.vim'
 ##################################
 
 #####text##########################
 [[plugins]]
-name = "text/badwolf"
 repo = "sjl/badwolf"
 
 [[plugins]]
-name = "text/caw"
 repo = "tyru/caw.vim"
 
 [[plugins]]
-name = 'text/neosnippet'
 repo = 'Shougo/neosnippet'
 
 [[plugins]]
-name = 'text/neosnippet-snippets'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-name = 'text/vim-indent-guides'
 repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
-name = 'text/w3m'
 repo = 'yuratomo/w3m.vim'
 ##################################
