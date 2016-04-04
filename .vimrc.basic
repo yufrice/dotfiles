@@ -47,6 +47,11 @@ set pastetoggle=<F12>
 set mouse=a
 set wildmode=list:longest
 
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nmap <BS> <C-W>h
 
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
 imap <C-k>  <ESC>"*pa
