@@ -36,11 +36,11 @@ nmap <Leader>sh :VimShell<CR>
 
 " deoplate
 let g:deoplete#enable_at_startup = 1
-" let g:deoplete#enable_smart_case = 1
+let g:deoplete#enable_smart_case = 1
 
 " deoplete-clang
-let g:deoplete#sources#clang#libclang_path="/usr/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header="/usr/lib/clang"
+let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 " clang-format
 let g:clang_format#style_options = {
@@ -74,7 +74,6 @@ map <Leader>mg  :MemoGrep<CR>
 " haskell
 let g:haskell_conceal = 0
 let g:haskell_conceal_wide = 1
-
 
 let g:haskellmode_completion_ghc = 0
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc

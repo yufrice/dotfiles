@@ -14,12 +14,14 @@ build = 'make'
 #####ui###########################
 [[plugins]]
 repo = 'Shougo/unite.vim'
-
-[[plugins]]
-repo = 'Shougo/neomru.vim'
+depends = ['Shougo/vimproc.vim']
 
 [[plugins]]
 repo = 'kmnk/vim-unite-giti.git'
+depends = ['Shougo/unite.vim']
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'miyakogi/seiya.vim'
@@ -69,7 +71,6 @@ repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
-
-[[plugins]]
-repo = 'yuratomo/w3m.vim'
 ##################################
+[[plugins]]
+repo = 'Konfekt/FastFold'

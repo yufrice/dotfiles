@@ -3,11 +3,11 @@
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
 ##################################
-
 #####cpp############################
 [[plugins]]
 repo = 'zchee/deoplete-clang'
 on_ft = 'cpp'
+depend = ['Shougo/deoplete.nvim']
 
 [[plugins]]
 repo = 'rhysd/vim-clang-format'
@@ -36,6 +36,7 @@ on_ft = 'haskell'
 [[plugins]]
 repo = 'eagletmt/neco-ghc'
 on_ft = 'haskell'
+depend = ['Shougo/deoplete.nvim']
 
 [[plugins]]
 repo = 'kana/vim-filetype-haskell'
