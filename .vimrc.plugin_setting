@@ -47,9 +47,12 @@ let g:clang_format#style_options = {
       \ 'AccessModifierOffset' : -4,
       \ 'AllowShortIfStatementsOnASingleLine' : 'true',
       \ 'AlwaysBreakTemplateDeclarations' : 'true',
-      \ 'Standard' : 'C++14',
       \ 'BreakBeforeBraces' : 'Stroustrup',
       \ }
+augroup cpp_format
+  autocmd!
+  autocmd BufWrite *.cpp ClangFormat
+augroup END
 
 " lisp
 let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/dein/repos/github.com/kovisoft/slimv/slime/start-swank.lisp &'
@@ -114,3 +117,10 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 
 "seiya
 let g:seiya_auto_enable=1
+
+"lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'solarized'
+      \ }
+let g:lightline.active = {}
+let g:lightline.inactive = {}

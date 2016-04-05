@@ -25,6 +25,9 @@ repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'miyakogi/seiya.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
 ####################################
 
 #####util#########################
@@ -58,7 +61,7 @@ repo = 'glidenote/memolist.vim'
 
 #####text##########################
 [[plugins]]
-repo = "sjl/badwolf"
+repo = "altercation/vim-colors-solarized"
 
 [[plugins]]
 repo = "tyru/caw.vim"

@@ -46,6 +46,7 @@ set wrapscan
 set pastetoggle=<F12>
 set mouse=a
 set wildmode=list:longest
+set laststatus=2
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
