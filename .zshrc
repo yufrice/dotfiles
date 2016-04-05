@@ -1,1 +1,0 @@
-/home/yuf16gbk/.zprezto/runcoms/zshrc
