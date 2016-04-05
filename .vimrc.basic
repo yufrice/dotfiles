@@ -60,3 +60,6 @@ imap <C-k>  <ESC>"*pa
 if executable('pdftotext')
   command! -complete=file -nargs=1 Pdf :r !pdftotext -nopgbrk -layout <q-args> -
 endif
+
+"カーソル位置保持
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif

@@ -28,6 +28,9 @@ repo = 'miyakogi/seiya.vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'jlanzarotta/bufexplorer'
 ####################################
 
 #####util#########################
