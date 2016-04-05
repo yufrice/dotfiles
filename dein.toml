@@ -60,6 +60,9 @@ repo = 'Shougo/vinarise'
 
 [[plugins]]
 repo = 'glidenote/memolist.vim'
+
+[[plugins]]
+repo = 'haya14busa/vim-easymotion'
 ##################################
 
 #####text##########################
