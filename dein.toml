@@ -63,6 +63,9 @@ repo = 'glidenote/memolist.vim'
 
 [[plugins]]
 repo = 'haya14busa/vim-easymotion'
+
+[[plugins]]
+repo = 'tpope/vim-speeddating'
 ##################################
 
 #####text##########################
