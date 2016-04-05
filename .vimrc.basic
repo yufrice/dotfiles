@@ -72,3 +72,6 @@ nnoremap <silent> ciy ciw<C-r>0<ESC>:let@/=@1<CR>:noh<CR>
 
 "matchit.vim
 source $VIMRUNTIME/macros/matchit.vim
+
+" escでfind ハイライト 解除
+nnoremap <ESC><ESC> :nohlsearch<CR>
