@@ -3,6 +3,13 @@
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
 ##################################
+
+#####ui############################
+[[plugins]]
+repo = 'Shougo/unite.vim'
+on_cmd = 'Unite'
+##################################
+
 #####cpp############################
 [[plugins]]
 repo = 'zchee/deoplete-clang'

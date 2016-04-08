@@ -13,14 +13,6 @@ build = 'make'
 
 #####ui###########################
 [[plugins]]
-repo = 'Shougo/unite.vim'
-depends = ['Shougo/vimproc.vim']
-
-[[plugins]]
-repo = 'kmnk/vim-unite-giti.git'
-depends = ['Shougo/unite.vim']
-
-[[plugins]]
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
