@@ -65,6 +65,9 @@ repo = 'tpope/vim-speeddating'
 repo = "altercation/vim-colors-solarized"
 
 [[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
 repo = "tyru/caw.vim"
 
 [[plugins]]
@@ -73,8 +76,8 @@ repo = 'Shougo/neosnippet'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
-[[plugins]]
-repo = 'nathanaelkane/vim-indent-guides'
+# [[plugins]]
+# repo = 'nathanaelkane/vim-indent-guides'
 ##################################
 [[plugins]]
 repo = 'Konfekt/FastFold'

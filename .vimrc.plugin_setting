@@ -30,6 +30,7 @@ let g:clang_format#style_options = {
       \ 'AlwaysBreakTemplateDeclarations' : 'true',
       \ 'BreakBeforeBraces' : 'Stroustrup',
       \ }
+let g:clang_format#code_style = 'linux'
 augroup cpp_format
   autocmd!
   autocmd BufWrite *.cpp ClangFormat
@@ -101,17 +102,17 @@ let g:seiya_auto_enable=1
 
 "lightline.vim
 let g:lightline = {
-      \ 'colorscheme': 'solarized'
+      \ 'colorscheme': 'wombat'
       \ }
 let g:lightline.active = {}
 let g:lightline.inactive = {}
 
 "vim-indent-guides
-let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=110
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_guide_size=1
+" let g:indent_guides_auto_colors=0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=110
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
+" let g:indent_guides_enable_on_vim_startup=1
+" let g:indent_guides_guide_size=1
 
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

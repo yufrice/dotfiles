@@ -5,7 +5,9 @@ syntax enable
 
 " ハイライト on
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+let g:molokai_original = 1
+colorscheme molokai
 
 set t_Co=256
 set t_Sf=[3%dm
@@ -27,6 +29,6 @@ highlight Normal ctermbg=none
 " hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
 " hi PmenuSbar ctermbg=0 ctermfg=9
 " hi PmenuSbar ctermbg=255 ctermfg=0 guifg=#000000 guibg=#FFFFFF
-hi Pmenu guibg=#666666
-hi PmenuSel guibg=#8cd0d3 guifg=#666666
-hi PmenuSbar guibg=#333333
+" hi Pmenu guibg=#666666
+" hi PmenuSel guibg=#8cd0d3 guifg=#666666
+" hi PmenuSbar guibg=#333333
