@@ -24,13 +24,13 @@ let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
 
 " clang-format
-let g:clang_format#style_options = {
-      \ 'AccessModifierOffset' : -4,
-      \ 'AllowShortIfStatementsOnASingleLine' : 'true',
-      \ 'AlwaysBreakTemplateDeclarations' : 'true',
-      \ 'BreakBeforeBraces' : 'Stroustrup',
-      \ }
-let g:clang_format#code_style = 'linux'
+let g:clang_format#code_style = 'Chromium'
+" let g:clang_format#style_options = {
+"       \ 'AccessModifierOffset' : -4,
+"       \ 'AllowShortIfStatementsOnASingleLine' : 'false',
+"       \ 'AlwaysBreakTemplateDeclarations' : 'true',
+"       \ 'BreakBeforeBraces' : 'Stroustrup',
+"       \ }
 augroup cpp_format
   autocmd!
   autocmd BufWrite *.cpp ClangFormat
