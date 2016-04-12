@@ -22,6 +22,10 @@ on_ft = 'cpp'
 [[plugins]]
 repo = 'vim-jp/vim-cpp'
 on_ft = 'cpp'
+
+[[plugins]]
+repo = 'vim-scripts/DoxygenToolkit.vim'
+on_ft = 'cpp'
 ####################################
 
 #####lisp###########################
