@@ -33,7 +33,9 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 alias chtor="sudo chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor"
 alias vim="nvim"
+export VISUAL=nvim
 export XDG_CONFIG_HOME=$HOME/.config
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export VIMRUNTIME="/usr/share/nvim/runtime"
+export LD_LIBRARY_PATH=$(llvm-config --libdir)

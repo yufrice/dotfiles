@@ -17,11 +17,15 @@ nmap <Leader>sh :VimShell<CR>
 
 " deoplate
 let g:deoplete#enable_at_startup = 1
+let g:deoplate#auto_complete_start_length=1
 let g:deoplete#enable_smart_case = 1
+let g:deoplete#file#enable_buffer_path = 1
+let g:deoplete#auto_complete_start_length = 1
 
 " deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/usr/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/lib/clang'
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib/clang/'
+let g:deoplete#sources#clang#sort_algo = 'priority'
 
 " clang-format
 let g:clang_format#code_style = 'Chromium'
