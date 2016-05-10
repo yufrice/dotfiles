@@ -8,7 +8,6 @@ set nobackup
 set autoread
 set noswapfile
 set nowritebackup
-set hidden
 set backspace=indent,eol,start
 set formatoptions=lmoq
 set browsedir=buffer
