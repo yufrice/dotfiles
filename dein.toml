@@ -61,8 +61,8 @@ repo = 'tpope/vim-speeddating'
 ##################################
 
 #####text##########################
-[[plugins]]
-repo = "altercation/vim-colors-solarized"
+#[[plugins]]
+#repo = "altercation/vim-colors-solarized"
 
 [[plugins]]
 repo = 'tomasr/molokai'
@@ -78,6 +78,8 @@ repo = 'Shougo/neosnippet-snippets'
 
 # [[plugins]]
 # repo = 'nathanaelkane/vim-indent-guides'
+[[plugins]]
+repo = 'Townk/vim-autoclose'
 ##################################
 [[plugins]]
 repo = 'Konfekt/FastFold'
