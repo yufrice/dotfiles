@@ -105,7 +105,7 @@ let g:seiya_auto_enable=1
 
 "lightline.vim
 let g:lightline = {
-      \ 'colorscheme': 'molokai'
+      \ 'colorscheme': 'hybrid'
       \ }
 let g:lightline.active = {}
 let g:lightline.inactive = {}

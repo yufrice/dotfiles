@@ -22,6 +22,9 @@ repo = 'miyakogi/seiya.vim'
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
+repo = 'cocopon/lightline-hybrid.vim'
+
+[[plugins]]
 repo = 'jlanzarotta/bufexplorer'
 ####################################
 
@@ -65,7 +68,7 @@ repo = 'tpope/vim-speeddating'
 #repo = "altercation/vim-colors-solarized"
 
 [[plugins]]
-repo = 'tomasr/molokai'
+repo = 'w0ng/vim-hybrid'
 
 [[plugins]]
 repo = "tyru/caw.vim"

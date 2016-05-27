@@ -6,8 +6,8 @@ syntax enable
 " ハイライト on
 set background=dark
 " colorscheme solarized
-let g:molokai_original = 1
-colorscheme molokai
+" let g:molokai_original = 1
+colorscheme hybrid
 
 set t_Co=256
 set t_Sf=[3%dm
