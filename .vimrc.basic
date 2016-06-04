@@ -28,7 +28,7 @@ set vb t_vb=
 set novisualbell
 " set list
 set ruler
-set nocompatible
+set completeopt=menuone
 set showmatch
 set matchtime=3
 set shiftround
