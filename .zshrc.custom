@@ -44,4 +44,3 @@ export GOPATH="$HOME/.go"
 export RUST_SRC_PATH="$HOME/.rust/src"
 export VIMRUNTIME="/usr/share/nvim/runtime"
 export LD_LIBRARY_PATH=$(llvm-config --libdir)
-# export PYTHONPATH=/usr/lib/python2.7/site-packages/gtk-2.0
