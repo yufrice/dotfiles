@@ -61,9 +61,6 @@ repo = 'haya14busa/vim-easymotion'
 
 [[plugins]]
 repo = 'tpope/vim-speeddating'
-
-[[plugins]]
-repo = 'kevinw/pyflakes-vim'
 ##################################
 
 #####text##########################
@@ -87,5 +84,5 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 ##################################
-[[plugins]]
-repo = 'Konfekt/FastFold'
+# [[plugins]]
+# repo = 'Konfekt/FastFold'

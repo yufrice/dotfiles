@@ -135,3 +135,6 @@ let g:rustfmt_command = '$HOME/.multirust/toolchains/nightly/cargo/bin/rustfmt'
 set hidden
 let g:raser_cmd = "$HOME/.multirust/toolchains/nightly/cargo/bin/racer"
 let $RUST_SRC_PATH="$HOME/.rust/src"
+
+" python syntax
+let python_highlight_all = 1

@@ -70,4 +70,12 @@ on_ft = 'rust'
 [[plugins]]
 repo = 'zchee/deoplete-jedi'
 on_ft = 'python'
+
+[[plugins]]
+repo = 'kevinw/pyflakes-vim'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'hdima/python-syntax'
+on_ft = 'python'
 ####################################
