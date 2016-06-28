@@ -65,3 +65,9 @@ on_ft = 'rust'
 repo = 'racer-rust/vim-racer'
 on_ft = 'rust'
 ####################################
+#
+#####python#########################
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = 'python'
+####################################

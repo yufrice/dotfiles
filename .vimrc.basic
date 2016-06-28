@@ -21,7 +21,7 @@ set notitle
 set nowrap
 set autoindent
 set number
-set encoding=UTF-8
+" set encoding=UTF-8
 set fileencoding=UTF-8
 set termencoding=UTF-8
 set vb t_vb=
