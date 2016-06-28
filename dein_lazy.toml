@@ -68,6 +68,6 @@ on_ft = 'rust'
 #
 #####python#########################
 [[plugins]]
-repo = 'davidhalter/jedi-vim'
+repo = 'zchee/deoplete-jedi'
 on_ft = 'python'
 ####################################
