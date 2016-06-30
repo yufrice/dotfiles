@@ -36,12 +36,6 @@ repo = 'rhysd/wandbox-vim'
 repo = 'thinca/vim-quickrun'
 
 [[plugins]]
-repo = 'thinca/vim-scouter'
-
-[[plugins]]
-repo = 'basyura/TweetVim'
-
-[[plugins]]
 repo = 'christoomey/vim-tmux-navigator'
 
 [[plugins]]
@@ -84,5 +78,3 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 ##################################
-# [[plugins]]
-# repo = 'Konfekt/FastFold'
