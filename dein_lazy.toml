@@ -79,3 +79,9 @@ on_ft = 'python'
 repo = 'hdima/python-syntax'
 on_ft = 'python'
 ####################################
+#
+#####tex############################
+[[plugins]]
+repo = 'lervag/vimtex'
+on_ft = 'plaintex'
+####################################
