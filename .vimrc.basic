@@ -72,3 +72,5 @@ source $VIMRUNTIME/macros/matchit.vim
 
 " escでfind ハイライト 解除
 nnoremap <ESC><ESC> :nohlsearch<CR>
+
+let g:tex_flavor = "latex"
