@@ -6,8 +6,9 @@ on_i = 1
 
 #####ui############################
 [[plugins]]
-repo = 'Shougo/unite.vim'
-on_cmd = 'Unite'
+# repo = 'Shougo/unite.vim'
+repo = 'Shougo/denite.nvim'
+on_cmd = 'Denite'
 ##################################
 
 #####cpp############################

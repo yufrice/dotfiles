@@ -1,7 +1,9 @@
 ! ThinkPad
 remove Lock = Caps_Lock
-keysym Caps_Lock = Control_L
+keycode 66 = Control_L
 add Control = Control_L
-keysym Zenkaku_Hankaku = Escape
+! keysym Zenkaku_Hankaku = Escape
+keycode 9 = grave asciitilde 
+keycode 49 = Escape
 ! HHKB
 keycode 133 = Muhenkan
