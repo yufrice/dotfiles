@@ -73,8 +73,9 @@ repo = 'Shougo/neosnippet'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
-# [[plugins]]
-# repo = 'nathanaelkane/vim-indent-guides'
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 

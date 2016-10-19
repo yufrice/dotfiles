@@ -137,3 +137,8 @@ let python_highlight_all = 1
 
 " let g:python_host_prog = '/usr/lib/python2.7'
 " let g:python3_host_prog = '/usr/lib/python3.5'
+
+" indentLine
+let g:indentLine_color_term = 111
+let g:indentLine_color_gui = '#708090'
+let g:indentLine_char = '|'
