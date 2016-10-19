@@ -1,5 +1,5 @@
 ﻿" denite
-" nnoremap <silent> ,uy :<C-u>Denite history/yank<CR>
+nnoremap <silent> ,uy :<C-u>Denite neoyank<CR>
 " nnoremap <silent> ,ub :<C-u>Denite buffer<CR>
 nnoremap <silent> ,uu :<C-u>Denite file_mru buffer<CR>
 

@@ -9,6 +9,12 @@ on_i = 1
 # repo = 'Shougo/unite.vim'
 repo = 'Shougo/denite.nvim'
 on_cmd = 'Denite'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+on_if = 1
+on_event = 'TextYankPost'
+on_source = ['denite.nvim']
 ##################################
 
 #####cpp############################
