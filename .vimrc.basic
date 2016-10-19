@@ -11,7 +11,7 @@ set nowritebackup
 set backspace=indent,eol,start
 set formatoptions=lmoq
 set browsedir=buffer
-set whichwrap=b,s,h,l,<,>,[,]
+set whichwrap=b,s,h,l,<,>,[,],~
 set showcmd
 set showmode
 set viminfo='50,<1000,s100,\"50
@@ -55,6 +55,13 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nnoremap j gj
+nnoremap k gk
+nnoremap <down> gj
+nnoremap <up> gk
+
+set cursorline
 
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
 imap <C-k>  <ESC>"*pa
