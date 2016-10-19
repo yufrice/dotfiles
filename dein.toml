@@ -77,4 +77,7 @@ repo = 'Shougo/neosnippet-snippets'
 # repo = 'nathanaelkane/vim-indent-guides'
 [[plugins]]
 repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
 ##################################
