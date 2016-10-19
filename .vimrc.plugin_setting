@@ -1,6 +1,7 @@
 ﻿" denite
 nnoremap <silent> ,uy :<C-u>Denite neoyank<CR>
-" nnoremap <silent> ,ub :<C-u>Denite buffer<CR>
+nnoremap <silent> ,uf :<C-u>Denite fire_rec<CR>
+nnoremap <silent> ,ug :<C-u>Denite grep<CR>
 nnoremap <silent> ,uu :<C-u>Denite file_mru buffer<CR>
 
 " Wand box
