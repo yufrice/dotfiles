@@ -85,4 +85,4 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 
 let g:tex_flavor = "latex"
 
-let g:python3_host_prog = expand('$HOME') . '/.pyenv/shims/python'
+" let g:python3_host_prog = expand('$HOME') . '/.pyenv/shims/python'

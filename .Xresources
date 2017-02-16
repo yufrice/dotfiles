@@ -1,0 +1,77 @@
+!
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #002b37, #002b37, #003642
+rofi.color-normal: #002b37, #819396, #002b37, #003642, #819396
+rofi.color-active: #002b37, #008ed4, #002b37, #003642, #008ed4
+rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
+
+
+! font
+URxvt.allow_bold:	false
+URxvt.font:              xft:Literation Mono Powerline:pixelsize=14:antialiase=true,xft:Ricty:pixelsize=14:antialiase=true
+URxvt.boldfont:          xft:Literation Mono Powerline:piselsize=14:antialiase=true:bold,xft:Ricty:pixelsize=14:bold:antialiase=true
+URxvt.italicfont:        xft:Literation Mono Powerline:piselsize=14:antialiase=true:italic,xft:Ricty:pixelsize=14:italic:antialiase=true
+URxvt.bolditalicfont:    xft:Literation Mono Powerline:piselsize=14:antialiase=true:bold:italic,xft:Ricty:pixelsize=14:bold:italic:antialiase=true
+URxvt.imFont:            -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
+
+! term
+URxvt*termName:	xterm-256color
+URxvt.depth: 24
+URxvt*shading: 80
+URxvt*inheritPixmap: true
+
+! UTF8
+URxvt.perl-ext-common: xim-onthespot
+URxvt*imLocale: en_US.UTF-8
+URxvt.inputMethod: fcitx
+URxvt.preeditType: OnTheSpot
+
+URxvt.scrollBar: false
+
+! color
+! Hybrid Terminal Colours
+! vim: ft=xdefaults
+
+! Tomorrow-Night Palette
+#define t_background #1D1F21
+#define t_current_line #282A2E
+#define t_selection #373B41
+#define t_foreground #C5C8C6
+#define t_comment #707880
+#define t_red #CC6666
+#define t_orange #DE935F
+#define t_yellow #F0C674
+#define t_green #B5BD68
+#define t_aqua #8ABEB7
+#define t_blue #81A2BE
+#define t_purple #B294BB
+
+URxvt.background: t_background
+URxvt.foreground: t_foreground
+! black
+*color0: t_current_line
+*color8: t_selection
+! red
+*color1: #A54242
+*color9: t_red
+! green
+*color2: #8C9440
+*color10: t_green
+! yellow
+*color3: t_orange
+*color11: t_yellow
+! blue
+*color4: #5F819D
+*color12: t_blue
+! magenta
+*color5: #85678F
+*color13: t_purple
+! cyan
+*color6: #5E8D87
+*color14: t_aqua
+! white
+*color7: t_comment
+*color15: t_foreground
