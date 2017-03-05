@@ -127,10 +127,10 @@ smap <expr><TAB> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : 
 
 " rust
 let g:rustfmt_autosave = 1
-let g:rustfmt_command = '$HOME/.multirust/toolchains/nightly/cargo/bin/rustfmt'
+let g:rustfmt_command = "$HOME/.cargo/bin/rustfmt"
 set hidden
-let g:raser_cmd = "$HOME/.multirust/toolchains/nightly/cargo/bin/racer"
-let $RUST_SRC_PATH="$HOME/.rust/src"
+let g:raser_cmd = "$HOME/.cargo/bin/racer"
+let $RUST_SRC_PATH="$HOME/src/rust"
 
 " python syntax
 let python_highlight_all = 1

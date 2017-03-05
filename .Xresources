@@ -20,7 +20,7 @@ URxvt.imFont:            -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10
 ! term
 URxvt*termName:	xterm-256color
 URxvt.depth: 24
-URxvt*shading: 80
+URxvt*shading: 20
 URxvt*inheritPixmap: true
 
 ! UTF8
