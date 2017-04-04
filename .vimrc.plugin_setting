@@ -37,7 +37,7 @@ augroup cpp_format
 augroup END
 
 " lisp
-let g:slimv_swank_cmd = '! xterm -e sbcl --load ~/.vim/dein/repos/github.com/kovisoft/slimv/slime/start-swank.lisp &'
+let g:slimv_swank_cmd = '! tmux new-window -d -n REPL-SBCL "sbcl --load ~/.vim/dein/repos/github.com/kovisoft/slimv/slime/start-swank.lisp"'
 let g:slimv_repl_split = 'REPL'
 let g:slimv_repl_simple_eval = 0
 let g:slimv_lisp = '/usr/bin/sbcl'
