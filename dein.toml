@@ -42,9 +42,6 @@ repo = 'christoomey/vim-tmux-navigator'
 repo = 'osyo-manga/vim-over'
 
 [[plugins]]
-repo = 'Shougo/vimshell.vim'
-
-[[plugins]]
 repo = 'Shougo/vinarise'
 
 [[plugins]]

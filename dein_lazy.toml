@@ -17,6 +17,10 @@ on_event = 'TextYankPost'
 on_source = ['denite.nvim']
 ##################################
 
+[[plugins]]
+repo = 'Shougo/deol.nvim'
+on_cmd = 'Deol'
+
 #####cpp############################
 [[plugins]]
 repo = 'zchee/deoplete-clang'

@@ -9,7 +9,7 @@ nmap <Leader>wb :Wandbox<CR>
 nmap <leader>wo :WandboxOpenBrowser<CR>
 
 " VimShell
-nmap <Leader>sh :VimShell<CR>
+nmap <Leader>sh :Deol<CR>
 
 " deoplate
 let g:deoplete#enable_at_startup = 1
