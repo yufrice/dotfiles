@@ -5,32 +5,14 @@ syntax enable
 
 " ハイライト on
 set background=dark
-" colorscheme solarized
-" let g:molokai_original = 1
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contracst = 1
-colorscheme hybrid
+colorscheme solarized
 
-set t_Co=256
-set t_Sf=[3%dm
-set t_Sb=[4%dm
-
-autocmd FileType go :highlight goErr cterm=bold ctermfg=214
-autocmd FileType go :match goErr /\<err\>/
-
-" vimdiffの色設定
 highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=22
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=52
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
 highlight Normal ctermbg=none
 
-"ポップアップメニューのカラーを設定
-" hi Pmenu ctermbg=255 ctermfg=0 guifg=#000000 guibg=#999999
-" hi PmenuSel ctermbg=red ctermfg=black
-" hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
-" hi PmenuSbar ctermbg=0 ctermfg=9
-" hi PmenuSbar ctermbg=255 ctermfg=0 guifg=#000000 guibg=#FFFFFF
-" hi Pmenu guibg=#666666
-" hi PmenuSel guibg=#8cd0d3 guifg=#666666
-" hi PmenuSbar guibg=#333333
+set t_Co=256
+set t_Sf=[3%dm
+set t_Sb=[4%dm
