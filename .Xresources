@@ -11,17 +11,17 @@ rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
 
 ! font
 URxvt.allow_bold:	false
-URxvt.font:              xft:Literation Mono Powerline:pixelsize=14:antialiase=true,xft:Ricty:pixelsize=14:antialiase=true
-URxvt.boldfont:          xft:Literation Mono Powerline:piselsize=14:antialiase=true:bold,xft:Ricty:pixelsize=14:bold:antialiase=true
-URxvt.italicfont:        xft:Literation Mono Powerline:piselsize=14:antialiase=true:italic,xft:Ricty:pixelsize=14:italic:antialiase=true
-URxvt.bolditalicfont:    xft:Literation Mono Powerline:piselsize=14:antialiase=true:bold:italic,xft:Ricty:pixelsize=14:bold:italic:antialiase=true
+URxvt.font:              xft:Inconsolata for Powerline:pixelsize=15:Medium,xft:Ricty:pixelsize=15:antialiase=true:Regular
+URxvt.boldfont:          xft:Inconsolata for Powerline:pixelsize=15:BoldForPowerline,xft:Ricty:pixelsize=15:antialiase=true:Bold
+URxvt.italicfont:        xft:Inconsolata for Powerline:pixelsize=15:Medium,xft:Ricty:pixelsize=15:antialiase=true:Regular
+URxvt.bolditalicfont:    xft:Inconsolata for Powerline:pixelsize=15:BoldForPowerline,xft:Ricty:pixelsize=15:antialiase=true:Bold
 URxvt.imFont:            -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
 
 ! term
 URxvt*termName:	xterm-256color
 URxvt.depth: 32
 URxvt*shading: 20
-URxvt*inheritPixmap: true
+! URxvt*inheritPixmap: true
 URxvt*fading: 0
 URxvt*:borderLess: true
 URxvt*internalBorder: 7
