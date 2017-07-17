@@ -22,18 +22,25 @@ let g:deoplete#auto_complete_start_length = 1
 let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm/4/lib64/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/lib/clang/'
 let g:deoplete#sources#clang#sort_algo = 'priority'
+let g:deoplete#sources#clang#std = {'cpp' : 'c++1z'}
 
 " clang-format
 let g:clang_format#code_style = 'Chromium'
-" let g:clang_format#style_options = {
-"       \ 'AccessModifierOffset' : -4,
-"       \ 'AllowShortIfStatementsOnASingleLine' : 'false',
-"       \ 'AlwaysBreakTemplateDeclarations' : 'true',
-"       \ 'BreakBeforeBraces' : 'Stroustrup',
-"       \ }
+let g:clang_format#style_options = {
+      \ 'BasedOnStyle' : 'Chromium',
+      \ 'AlignAfterOpenBracket' : 'true',
+      \ 'AlignConsecutiveAssignments' : 'true',
+      \ 'AlignTrailingComments' : 'true',
+      \ 'AllowShortCaseLabelsOnASingleLine' : 'true',
+      \ 'AlwaysBreakTemplateDeclarations' : 'true',
+      \ 'BinPackArguments' : 'true',
+      \ 'BreakBeforeBraces' : 'Attach',
+      \ 'ConstructorInitializerAllOnOneLineOrOnePerLine' : 'true',
+      \ 'NamespaceIndentation' : 'All',
+      \ }
 augroup cpp_format
   autocmd!
-  autocmd BufWrite *.cpp ClangFormat
+  autocmd BufWrite *.*pp ClangFormat
 augroup END
 
 " lisp
@@ -158,3 +165,6 @@ call dein#add(g:opamshare . "/ocp-indent/vim", {'lazy': 1, 'on_ft': 'ocaml', 'on
 let g:deoplete#omni_patterns = {}
 let g:deoplete#omni_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
 let g:neomake_ocaml_checkers = ['merlin']
+
+" NERD
+nmap <Leader>e :NERDTree<CR>
