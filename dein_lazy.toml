@@ -99,5 +99,5 @@ on_ft = 'python'
 [[plugins]]
 
 repo='lervag/vimtex'
-on_ft = 'plaintex'
+on_ft = 'tex'
 ####################################

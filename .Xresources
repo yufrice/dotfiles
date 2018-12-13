@@ -11,10 +11,14 @@ rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
 
 ! font
 URxvt.allow_bold:	false
-URxvt.font:              xft:Inconsolata for Powerline:pixelsize=15:Medium,xft:Ricty:pixelsize=15:antialiase=true:Regular
-URxvt.boldfont:          xft:Inconsolata for Powerline:pixelsize=15:BoldForPowerline,xft:Ricty:pixelsize=15:antialiase=true:Bold
-URxvt.italicfont:        xft:Inconsolata for Powerline:pixelsize=15:Medium,xft:Ricty:pixelsize=15:antialiase=true:Regular
-URxvt.bolditalicfont:    xft:Inconsolata for Powerline:pixelsize=15:BoldForPowerline,xft:Ricty:pixelsize=15:antialiase=true:Bold
+URxvt.font:		xft:DejaVu Sans Mono for Powerline-11:style=Book,\
+			xft:Myrica-12:style=Regular
+URxvt.boldfont:		xft:DejaVu Sans Mono for Powerline-11:style=Bold,\
+			xft:Myrica-12:stype=Bold
+URxvt.italicfont:	xft:DejaVu Sans Mono for Powerline-11:style=Oblique,\
+			xft:Myrica-12:style=Oblique
+URxvt.bolditalicfont:	xft:DejaVu Sans Mono for Powerline-11:style=Bold Oblique,\
+			xft:Myrica-12:style=Bold Oblique
 URxvt.imFont:            -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
 
 ! term
@@ -25,6 +29,10 @@ URxvt*shading: 20
 URxvt*fading: 0
 URxvt*:borderLess: true
 URxvt*internalBorder: 7
+URxvt.pointerBlank: true
+URxvt.visualBell: true
+URxvt.saveLines: 3000
+URxvt.feding: 40
 
 ! UTF8
 URxvt.perl-ext-common: xim-onthespot
@@ -34,30 +42,44 @@ URxvt.preeditType: OnTheSpot
 
 URxvt.scrollBar: false
 
-URxvt*colorUL:                #859900
-URxvt*colorBD:                #268bd2
-URxvt*color1:                 #dc322f
-URxvt*color9:                 #cb4b16
-URxvt*color2:                 #859900
-URxvt*color3:                 #b58900
-URxvt*color4:                 #268bd2
-URxvt*color5:                 #d33682
-URxvt*color13:                #6c71c4
-URxvt*color6:                 #2aa198
 
-URxvt*background:             #002b36
-URxvt*foreground:             #839496
-URxvt*fadeColor:              #002b36
-URxvt*cursorColor:            #93a1a1
-URxvt*pointerColorBackground: #586e75
-URxvt*pointerColorForeground: #93a1a1
-URxvt*scrollColor:            #657b83
-URxvt*borderColor:            #002b36
-URxvt*color0:                 #073642
-URxvt*color8:                 #839496
-URxvt*color10:                #586e75
-URxvt*color11:                #657b83
-URxvt*color12:                #839496
-URxvt*color14:                #93a1a1
-URxvt*color7:                 #eee8d5
-URxvt*color15:                #fdf6e3
+!!Source http://github.com/altercation/solarized
+
+URxvt.background: #002b36
+URxvt.foreground: #657b83
+URxvt.fadeColor: #002b36
+URxvt.cursorColor: #93a1a1
+URxvt.pointerColorBackground: [90]#586e75
+URxvt.pointerColorForeground: [90]#93a1a1
+
+!! black dark/light
+URxvt.color0: #073642
+URxvt.color8: #002b36
+
+!! red dark/light
+URxvt.color1: #dc322f
+URxvt.color9: #cb4b16
+
+!! green dark/light
+URxvt.color2: #859900
+URxvt.color10: #586e75
+
+!! yellow dark/light
+URxvt.color3: #b58900
+URxvt.color11: #657b83
+
+!! blue dark/light
+URxvt.color4: #268bd2
+URxvt.color12: #839496
+
+!! magenta dark/light
+URxvt.color5: #d33682
+URxvt.color13: #6c71c4
+
+!! cyan dark/light
+URxvt.color6: #2aa198
+URxvt.color14: #93a1a1
+
+!! white dark/light
+URxvt.color7: #eee8d5
+URxvt.color15: #fdf6e3

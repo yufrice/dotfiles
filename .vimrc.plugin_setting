@@ -19,7 +19,7 @@ let g:deoplete#file#enable_buffer_path = 1
 let g:deoplete#auto_complete_start_length = 1
 
 " deoplete-clang
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm/4/lib64/libclang.so'
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header = '/usr/lib/clang/'
 let g:deoplete#sources#clang#sort_algo = 'priority'
 let g:deoplete#sources#clang#std = {'cpp' : 'c++1z'}
@@ -50,6 +50,8 @@ let g:slimv_repl_simple_eval = 0
 let g:slimv_lisp = '/usr/bin/sbcl'
 let g:slimv_impl = 'sbcl'
 let g:slimv_preferred = 'sbcl'
+let g:lisp_rainbow = 1
+
 
 
 " togle comment
@@ -88,13 +90,9 @@ let g:quickrun_config = {
       \}
 
 let g:quickrun_no_default_key_mappings = 1
-nnoremap \r :write<CR>:QuickRun -mode n<CR>        
-xnoremap \r :<C-U>write<CR>gv:QuickRun -mode v<CR> 
+nnoremap \r :write<CR>:QuickRun -mode n<CR>
+xnoremap \r :<C-U>write<CR>gv:QuickRun -mode v<CR>
 
-
-" twitter
-let twitvim_force_ssl = 1 
-let twitvim_count = 40
 
 "tmux
 let g:tmux_navigator_no_mappings = 1
@@ -112,13 +110,6 @@ let g:lightline = {
       \ }
 let g:lightline.active = {}
 let g:lightline.inactive = {}
-
-"vim-indent-guides
-" let g:indent_guides_auto_colors=0
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=110
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=140
-" let g:indent_guides_enable_on_vim_startup=1
-" let g:indent_guides_guide_size=1
 
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -142,29 +133,28 @@ let $RUST_SRC_PATH="$HOME/src/rust"
 " python syntax
 let python_highlight_all = 1
 
-" let g:python_host_prog = '/usr/lib/python2.7'
-" let g:python3_host_prog = '/usr/lib/python3.5'
-
-" indentLine
-let g:indentLine_color_term = 111
-let g:indentLine_color_gui = '#708090'
-let g:indentLine_char = '|'
-
 " tex
 let g:vimtex_latexmk_continuous = 1
 let g:vimtex_latexmk_background = 1
 let g:vimtex_view_general_viewer = 'qpdf'
+let g:vimtex_compiler_latexmk = {
+      \ 'options' : [
+      \   '-verbose',
+      \   '-file-line-error',
+      \   '-synctex=1',
+      \   '-interaction=nonstopmode',
+      \ ]}
 
 " neomake
 autocmd! BufWritePost * Neomake
 
 " caml
-let g:opamshare = '$HOME/.opam/system/share'
-call dein#add(g:opamshare . "/merlin/vim", {'lazy': 1, 'on_ft': 'ocaml', 'on_event': 'InsertEnter'})
-call dein#add(g:opamshare . "/ocp-indent/vim", {'lazy': 1, 'on_ft': 'ocaml', 'on_event': 'InsertEnter'})
-let g:deoplete#omni_patterns = {}
-let g:deoplete#omni_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
-let g:neomake_ocaml_checkers = ['merlin']
+" let g:opamshare = '$HOME/.opam/system/share'
+" call dein#add(g:opamshare . "/merlin/vim", {'lazy': 1, 'on_ft': 'ocaml', 'on_event': 'InsertEnter'})
+" call dein#add(g:opamshare . "/ocp-indent/vim", {'lazy': 1, 'on_ft': 'ocaml', 'on_event': 'InsertEnter'})
+" let g:deoplete#omni_patterns = {}
+" let g:deoplete#omni_patterns.ocaml = '[^. *\t]\.\w*\|\h\w*|#'
+" let g:neomake_ocaml_checkers = ['merlin']
 
 " NERD
 nmap <Leader>e :NERDTree<CR>
