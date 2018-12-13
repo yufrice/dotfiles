@@ -2,6 +2,7 @@
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
+do = ':UpdateRemotePlugins'
 ##################################
 
 #####ui############################
@@ -54,21 +55,6 @@ on_ft = 'lisp'
 ####################################
 
 #####haskell########################
-[[plugins]]
-repo = 'dag/vim2hs'
-on_ft = 'haskell'
-
-[[plugins]]
-repo = 'eagletmt/ghcmod-vim'
-on_ft = 'haskell'
-
-[[plugins]]
-repo = 'eagletmt/neco-ghc'
-on_ft = 'haskell'
-
-[[plugins]]
-repo = 'kana/vim-filetype-haskell'
-on_ft = 'haskell'
 ####################################
 #
 #####rust###########################
@@ -87,17 +73,23 @@ repo = 'zchee/deoplete-jedi'
 on_ft = 'python'
 
 [[plugins]]
-repo = 'kevinw/pyflakes-vim'
-on_ft = 'python'
-
-[[plugins]]
-repo = 'hdima/python-syntax'
+repo = 'Vimjas/vim-python-pep8-indent'
 on_ft = 'python'
 ####################################
 #
 #####tex############################
 [[plugins]]
+repo='lervag/vim-latex'
+on_ft = 'latex'
+####################################
+#
+#####lint/lsp#######################
+[[plugins]]
+repo='w0rp/ale'
+on_ft = ['python']
 
-repo='lervag/vimtex'
-on_ft = 'plaintex'
+[[plugins]]
+repo='autozimu/LanguageClient-neovim'
+on_ft = ['haskell']
+do = 'bash install.sh'
 ####################################

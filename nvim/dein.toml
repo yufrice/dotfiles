@@ -16,9 +16,6 @@ build = 'make'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
-repo = 'miyakogi/seiya.vim'
-
-[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
@@ -30,22 +27,10 @@ repo = 'jlanzarotta/bufexplorer'
 
 #####util#########################
 [[plugins]]
-repo = 'rhysd/wandbox-vim'
-
-[[plugins]]
-repo = 'thinca/vim-quickrun'
-
-[[plugins]]
 repo = 'christoomey/vim-tmux-navigator'
 
 [[plugins]]
 repo = 'osyo-manga/vim-over'
-
-[[plugins]]
-repo = 'Shougo/vinarise'
-
-[[plugins]]
-repo = 'glidenote/memolist.vim'
 
 [[plugins]]
 repo = 'haya14busa/vim-easymotion'
@@ -57,9 +42,6 @@ repo = 'tpope/vim-speeddating'
 #####text##########################
 [[plugins]]
 repo = "altercation/vim-colors-solarized"
-
-# [[plugins]]
-# repo = 'w0ng/vim-hybrid'
 
 [[plugins]]
 repo = "tyru/caw.vim"
@@ -78,7 +60,4 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
-
-[[plugins]]
-repo = 'neomake/neomake'
 ##################################

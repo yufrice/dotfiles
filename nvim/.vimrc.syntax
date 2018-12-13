@@ -11,6 +11,8 @@ set tabstop=2 shiftwidth=2 softtabstop=0
 
 let g:lisp_rainbow = 1
 
+let g:tex_conceal=''
+
 if has("autocmd")
   "ファイルタイプの検索を有効にする
   filetype plugin on

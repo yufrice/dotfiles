@@ -1,4 +1,5 @@
-let s:dein_dir = expand('~/.vim/dein')
+let s:conf_dir = expand($HOME. '/.config/nvim')
+let s:dein_dir = s:conf_dir. '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if &runtimepath !~# '/dein.vim'
@@ -10,8 +11,8 @@ endif
 
 
 if dein#load_state(s:dein_dir)
-  let s:toml      = '~/dotfiles/dein.toml'
-  let s:lazy_toml = '~/dotfiles/dein_lazy.toml'
+  let s:toml      = s:conf_dir. '/dein.toml'
+  let s:lazy_toml = s:conf_dir. '/dein_lazy.toml'
 
   call dein#begin(s:dein_dir,[$MYVIMRC,s:toml,s:lazy_toml])
 
@@ -30,3 +31,6 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+let g:python_host_prog = expand('/usr/bin/python2')
+let g:python3_host_prog = expand($HOME. '/miniconda3/bin/python')

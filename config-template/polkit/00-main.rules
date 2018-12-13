@@ -1,0 +1,8 @@
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.login1" ||
+         action.id == "org.freedesktop.udisks2" ||
+         action.id == "org.freedesktop.NetworkManager") &&
+        subject.user == "admin") {
+        return polkit.Result.YES;
+    }
+});

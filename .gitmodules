@@ -1,0 +1,6 @@
+[submodule "zsh/lib/dircolors-solarized"]
+	path = zsh/lib/dircolors-solarized
+	url = git@github.com:seebi/dircolors-solarized.git
+[submodule "lib/powerline"]
+	path = lib/powerline
+	url = git@github.com:powerline/powerline.git
