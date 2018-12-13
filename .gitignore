@@ -18,7 +18,4 @@ Session.vim
 .zshrc.local
 samples
 
-.vim/bundle/
-.vim/.netrwhist
-.vimrc_sample
-
+nvim/dein
